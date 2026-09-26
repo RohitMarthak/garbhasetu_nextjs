@@ -35,15 +35,21 @@ test("English and Gujarati messages have the same structure", async () => {
 
 test("translated arrays use stable semantic IDs", async () => {
   const expected = {
-    aspects: ["nourishment", "mind", "bond"],
+    practices: ["reading", "conversation", "creative", "journal"],
+    stages: ["antenatal", "labour", "lactation", "postpartum"],
     pillars: ["antenatal", "labour", "lactation", "postpartum"],
+    labourPlans: ["counselling", "presence"],
+    neoItems: ["neonatal", "binder", "incision"],
     plans: ["anc", "ancPnc", "lactation", "labourOnline", "labourPresence", "incontinence"],
   };
 
   for (const locale of ["en", "gu"]) {
     const data = await messages(locale);
-    assert.deepEqual(data.home.aspects.map(({ id }) => id), expected.aspects);
+    assert.deepEqual(data.home.practices.map(({ id }) => id), expected.practices);
+    assert.deepEqual(data.home.stages.map(({ id }) => id), expected.stages);
     assert.deepEqual(data.services.pillars.map(({ id }) => id), expected.pillars);
+    assert.deepEqual(data.services.labourPlansRich.map(({ id }) => id), expected.labourPlans);
+    assert.deepEqual(data.services.neoItemsRich.map(({ id }) => id), expected.neoItems);
     assert.deepEqual(data.packages.plans.map(({ id }) => id), expected.plans);
   }
 });
