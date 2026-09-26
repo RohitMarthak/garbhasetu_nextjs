@@ -30,7 +30,7 @@ export default async function HomePage({ params }: Props) {
         <div className="hero-grid rise overflow-hidden rounded-[2rem] border border-line bg-paper shadow-[0_24px_70px_rgb(84_31_44/0.08)]">
           <div className="p-7 sm:p-10 lg:p-12">
             <p lang="sa" className="text-sm tracking-[0.15em] text-saffron-deep">{t("shloka")}</p>
-            <h1 className="mt-5 font-display text-5xl leading-none text-maroon-deep sm:text-6xl">GarbhaSetu</h1>
+            <h1 lang="en" className="mt-5 font-display text-5xl leading-none text-maroon-deep sm:text-6xl">GarbhaSetu</h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-ink">{t("tagline")}</p>
             <p className="mt-6 text-sm uppercase tracking-[0.14em] text-maroon">{t("founderKicker")}</p>
             <p className="mt-1 text-sm text-ink-soft">{t("founderRole")}</p>
@@ -43,9 +43,9 @@ export default async function HomePage({ params }: Props) {
               </Link>
             </div>
           </div>
-          <div className="hero-art relative grid min-h-72 place-items-center overflow-hidden p-8 sm:min-h-96">
+          <div className="hero-art relative grid min-h-72 place-items-center overflow-hidden p-5 sm:min-h-96 sm:p-8">
             <span className="absolute inset-8 rounded-full border border-white/40" aria-hidden />
-            <div className="relative h-64 w-60 overflow-hidden rounded-[40%] bg-paper/95 p-4 shadow-xl sm:h-80 sm:w-72">
+            <div className="relative aspect-[15/16] w-full max-w-60 overflow-hidden rounded-[40%] bg-white p-4 shadow-xl sm:max-w-72">
               <Image src="/brand/mark.png" alt="" fill priority sizes="(max-width: 768px) 240px, 288px" className="object-contain p-3" />
             </div>
           </div>

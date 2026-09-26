@@ -10,19 +10,22 @@ import { createLocalizedMetadata, type Locale } from "@/lib/metadata";
 import "../globals.css";
 
 const noto = localFont({
-  src: "../fonts/noto-sans-gujarati-variable.ttf",
+  src: [
+    { path: "../fonts/noto-sans-gujarati.woff2", weight: "100 900" },
+    { path: "../fonts/noto-sans-latin.woff2", weight: "100 900" },
+  ],
   weight: "100 900",
   variable: "--font-noto-family",
   display: "swap",
+  preload: false,
 });
 
 const display = localFont({
-  src: [
-    { path: "../fonts/cormorant-garamond-500.ttf", weight: "500" },
-    { path: "../fonts/cormorant-garamond-600.ttf", weight: "600" },
-  ],
+  src: "../fonts/cormorant-garamond-latin.woff2",
+  weight: "500 600",
   variable: "--font-display-family",
   display: "swap",
+  preload: false,
 });
 
 type Props = {

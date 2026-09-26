@@ -25,6 +25,7 @@ const nextConfig: NextConfig = {
       {
         source: "/:path*",
         headers: [
+          { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
           { key: "Content-Security-Policy", value: contentSecurityPolicy },
           { key: "Permissions-Policy", value: "camera=(), geolocation=(), microphone=(), payment=()" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },

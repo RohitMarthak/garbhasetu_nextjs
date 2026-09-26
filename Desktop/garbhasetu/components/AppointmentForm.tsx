@@ -84,10 +84,17 @@ export function AppointmentForm() {
   }
 
   const fieldClass =
-    "mt-1 w-full rounded-xl border border-line bg-paper px-3 py-2.5 text-ink outline-none ring-saffron focus:ring-2";
+    "mt-1 w-full rounded-xl border border-[#9f8b72] bg-paper px-3 py-2.5 text-ink outline-none ring-saffron-deep focus:ring-2";
+
+  function onFormChange(event: React.ChangeEvent<HTMLFormElement>) {
+    const field = (event.target as unknown as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement).name as Field;
+    setChatUrl("");
+    setStatus("");
+    if (field) setErrors((current) => ({ ...current, [field]: undefined }));
+  }
 
   return (
-    <form ref={formRef} onSubmit={onSubmit} onChange={() => { setChatUrl(""); setStatus(""); }} noValidate className="panel rounded-2xl p-5 sm:p-6">
+    <form ref={formRef} onSubmit={onSubmit} onChange={onFormChange} noValidate className="panel rounded-2xl p-5 sm:p-6">
       <p className="mb-5 rounded-xl bg-cream px-4 py-3 text-sm leading-6 text-ink-soft">{t("privacyNotice")}</p>
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="block text-sm">
@@ -142,7 +149,7 @@ export function AppointmentForm() {
       <p className="mt-4 text-sm leading-6 text-ink-soft" role="status" aria-live="polite">
         {status}{chatUrl ? (
           <>{" "}
-          <a className="text-maroon underline-offset-2 hover:underline" href={chatUrl} target="_blank" rel="noreferrer">
+          <a className="text-maroon underline-offset-2 hover:underline" href={chatUrl} target="_blank" rel="noopener noreferrer">
             {t("openedLink")}
           </a>
           </>

@@ -35,7 +35,7 @@ textarea {
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-saffron);
+  outline: 3px solid var(--color-saffron-deep);
 }
 
 .skip-link {
@@ -45,7 +45,7 @@ textarea {
   z-index: 100;
   transform: translateY(-200%);
   border-radius: 999px;
-  background: var(--color-paper);
+  background: white;
   color: var(--color-maroon-deep);
   padding: 0.65rem 1rem;
   box-shadow: 0 8px 24px rgb(84 31 44 / 18%);
@@ -90,7 +90,7 @@ textarea {
   overflow: hidden;
   border: 1px solid rgb(193 122 43 / 28%);
   border-radius: 35%;
-  background: var(--color-paper);
+  background: white;
   box-shadow: 0 5px 18px rgb(84 31 44 / 10%);
 }
 
@@ -163,6 +163,12 @@ textarea {
   }
 }
 
+@media (max-width: 380px) {
+  .brand-wordmark {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -170,8 +176,7 @@ textarea {
 
   .lift,
   .photo-zoom,
-  .rise,
-  .reveal {
+  .rise {
     animation: none;
     transition: none;
   }

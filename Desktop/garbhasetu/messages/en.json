@@ -264,7 +264,8 @@
       "Air conditioning, and a speaker for garbha sangeet",
       "Yellow light for meditation and dhyan",
       "Postpartum weight-reduction equipment only at Sanidhi Physiotherapy Clinic"
-    ]
+    ],
+    "sectionNav": "Service sections"
   },
   "packages": {
     "kicker": "Fees",
@@ -311,13 +312,11 @@
     "sessionTitle": "Other offline physiotherapy sessions",
     "sessionBody": "{amount} per session for the conditions below.",
     "conditions": [
-      "Incontinence",
       "Vaginismus",
       "Vaginal laxity",
       "Diastasis recti",
       "PIVD",
       "Prolapse",
-      "Incision infection",
       "Postpartum postural pain"
     ],
     "extraTitle": "Caesarean incision infection",

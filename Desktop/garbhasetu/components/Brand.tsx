@@ -13,7 +13,7 @@ export function Brand({ inverse = false, compact = false }: { inverse?: boolean;
         <Image src="/brand/mark.png" alt="" width={428} height={464} sizes="56px" priority={compact} />
       </span>
       <span>
-        <span className={`block font-display text-2xl leading-none ${inverse ? "text-cream" : "text-maroon-deep"}`}>
+        <span lang="en" className={`brand-wordmark block font-display text-2xl leading-none ${inverse ? "text-cream" : "text-maroon-deep"}`}>
           GarbhaSetu
         </span>
         {!compact ? (

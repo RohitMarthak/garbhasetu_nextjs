@@ -22,6 +22,15 @@ robots file, canonical URLs, and localized alternate links. Use the final
 deployment origin for production. The CI placeholder is only for build-time
 metadata validation and must not be deployed as the public origin.
 
+Canonical URLs, alternate-language links, robots, and sitemap values are baked
+into the static pages at build time. Rebuild after `SITE_URL` changes.
+
+Deploy to a Node-compatible Next.js host or run `next start` behind a reverse
+proxy. A static export does not preserve locale middleware, image optimization,
+or the security headers from `next.config.ts`. The script policy permits
+inline scripts because Next.js 15 uses inline bootstrap data for these static
+routes; `object-src`, `base-uri`, and framing remain restricted.
+
 ## Checks and production server
 
 ```bash
