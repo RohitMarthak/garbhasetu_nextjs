@@ -29,7 +29,7 @@ export function notFoundResponse(locale: Locale) {
     @font-face{font-family:GarbhaGujarati;src:url('/fonts/noto-sans-gujarati.woff2') format('woff2');font-weight:100 900;font-display:swap}
     *{box-sizing:border-box}body{margin:0;background:#f6f0e4;color:#2a211c;font-family:GarbhaGujarati,Arial,sans-serif}
     main{min-height:100vh;display:grid;place-items:center;padding:2rem;text-align:center;background:radial-gradient(ellipse at top,#eadcc6,transparent 55%)}
-    section{max-width:38rem}.code{color:#8d5414;letter-spacing:.16em}h1{margin:.75rem 0 0;color:#541f2c;font-family:Georgia,serif;font-size:clamp(2.5rem,8vw,4rem);font-weight:500}
+    section{max-width:38rem}.code{color:#8d5414;letter-spacing:.16em}h1{margin:.75rem 0 0;color:#541f2c;font-family:GarbhaGujarati,Georgia,serif;font-size:clamp(2.5rem,8vw,4rem);font-weight:500}
     p{margin:1rem auto 0;max-width:32rem;color:#5c4d43;line-height:1.75}.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2rem}
     a{border:1px solid #7a3040;border-radius:999px;padding:.7rem 1.1rem;color:#7a3040;text-decoration:none}a:first-child{background:#7a3040;color:#f6f0e4}
     a:focus-visible{outline:3px solid #8d5414;outline-offset:3px}
