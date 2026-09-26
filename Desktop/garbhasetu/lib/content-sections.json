@@ -134,7 +134,13 @@
       "services.safetyTitle",
       "services.safetyBody",
       "services.familyTitle",
-      "services.redFlagsTitle"
+      "services.redFlagsTitle",
+      "services.pillars",
+      "services.physioKicker",
+      "services.physioTitle",
+      "services.physioIntro",
+      "services.familyItems",
+      "services.redFlags"
     ],
     "sourceIds": [
       "clinic-presentation-2026",
@@ -257,7 +263,10 @@
       "services.facilitiesTitle",
       "services.modalitiesTitle",
       "services.toolsTitle",
-      "services.roomsTitle"
+      "services.roomsTitle",
+      "services.modalities",
+      "services.tools",
+      "services.rooms"
     ],
     "sourceIds": [
       "clinic-presentation-2026"

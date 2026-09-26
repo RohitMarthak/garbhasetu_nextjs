@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
-import { access, readFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
+import { access, readFile, stat } from "node:fs/promises";
 import test from "node:test";
 
 const root = new URL("../", import.meta.url);
@@ -17,8 +18,12 @@ const publishedAssets = [
 test("published editorial assets exist and have provenance records", async () => {
   const register = await readFile(new URL("docs/asset-sources.md", root), "utf8");
   for (const path of publishedAssets) {
-    await access(new URL(path, root));
+    const url = new URL(path, root);
+    const [contents, metadata] = await Promise.all([readFile(url), stat(url)]);
+    const hash = createHash("sha256").update(contents).digest("hex");
     assert.match(register, new RegExp(path.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), `${path} has a register entry`);
+    assert.match(register, new RegExp(hash), `${path} has its current SHA-256 in the register`);
+    assert.match(register, new RegExp(`${metadata.size.toLocaleString("en-US")} bytes`), `${path} has its current size in the register`);
   }
 });
 

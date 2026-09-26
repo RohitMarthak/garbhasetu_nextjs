@@ -92,10 +92,10 @@ export default async function ServicesPage({ params }: Props) {
         <div className="overflow-hidden rounded-[2rem] bg-maroon-deep text-cream">
           <div className="editorial-split gap-0">
             <div className="p-7 sm:p-9">
-              <p className="text-xs uppercase tracking-[0.16em] text-[#f1c982]">{t("physioKicker")}</p>
+              <p className="text-xs uppercase tracking-[0.16em] text-saffron-light">{t("physioKicker")}</p>
               <h2 className="mt-2 text-3xl text-cream">{t("physioTitle")}</h2>
               <p className="mt-4 leading-7 text-cream/80">{t("physioIntro")}</p>
-              <SourceNote sourceIds={["clinic-presentation-2026", "clinic-garbhasanskar-guide-2026", "who-antenatal-care-2016"]} locale={locale} className="mt-3 text-sm leading-6 text-cream/85 [&_a]:text-[#f1c982] [&_span]:text-[#f1c982]" />
+              <SourceNote sourceIds={["clinic-presentation-2026", "clinic-garbhasanskar-guide-2026", "who-antenatal-care-2016"]} locale={locale} className="mt-3 text-sm leading-6 text-cream/85 [&_a]:text-saffron-light [&_span]:text-saffron-light" />
             </div>
             <figure className="relative min-h-72 overflow-hidden">
               <Image src="/photos/conversation-meeting-room.webp" alt={t("physioImageAlt")} fill sizes="(max-width: 767px) 100vw, 50vw" className="object-cover" />

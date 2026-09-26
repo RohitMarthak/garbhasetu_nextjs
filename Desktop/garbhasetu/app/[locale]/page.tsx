@@ -143,7 +143,7 @@ export default async function HomePage({ params }: Props) {
 
       <section id="care-stages" className="bg-maroon-deep text-cream">
         <div className="mx-auto max-w-5xl px-5 py-14">
-          <p className="text-xs uppercase tracking-[0.16em] text-[#f1c982]">{t("stagesKicker")}</p>
+          <p className="text-xs uppercase tracking-[0.16em] text-saffron-light">{t("stagesKicker")}</p>
           <h2 className="mt-2 font-display text-4xl">{t("stagesTitle")}</h2>
           <p className="mt-4 max-w-2xl leading-7 text-cream/80">{t("stagesIntro")}</p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -151,7 +151,7 @@ export default async function HomePage({ params }: Props) {
               <Link key={stage.id} href={`/services#${stage.id}`} className="stage-link rounded-2xl border border-cream/20 bg-cream/8 p-5">
                 <h3 className="text-lg text-cream">{stage.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-cream/70">{stage.body}</p>
-                <span className="mt-4 inline-flex items-center gap-2 text-sm text-[#f1c982]">{t("learnMore")}<ArrowRight className="h-4 w-4" aria-hidden /></span>
+                <span className="mt-4 inline-flex items-center gap-2 text-sm text-saffron-light">{t("learnMore")}<ArrowRight className="h-4 w-4" aria-hidden /></span>
               </Link>
             ))}
           </div>
