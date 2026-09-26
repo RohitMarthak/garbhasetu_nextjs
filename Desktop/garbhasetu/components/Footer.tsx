@@ -16,7 +16,6 @@ export function Footer() {
           <p className="mt-3 max-w-sm text-sm text-cream/80">{home("tagline")}</p>
           <p className="mt-4 text-sm text-cream/70">{footer("rights")}</p>
           <p className="mt-3 max-w-lg text-xs leading-5 text-cream/75">{footer("notice")}</p>
-          <p className="mt-2 max-w-sm text-xs leading-5 text-cream/60">{footer("photos")}</p>
         </div>
         <nav aria-label={t("footerNav")} className="flex flex-col gap-2 text-sm">
           <Link href="/services" className="hover:text-white">

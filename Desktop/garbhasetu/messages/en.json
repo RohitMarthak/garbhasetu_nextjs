@@ -46,36 +46,6 @@
       "Making cooked rice from rice",
       "Making kadhi from buttermilk"
     ],
-    "philosophyTitle": "Foundational idea",
-    "philosophyBody": "Traditional Garbha Sanskar uses the image of preparing seed, soil, nourishment, and care to explain thoughtful preparation for pregnancy. At GarbhaSetu, this means supporting the parents’ health, nourishing food, healthy routines, and a caring environment.",
-    "wholeTitle": "A complete process",
-    "wholeBody": "Garbha sanskar is not the name of one mantra, one puja, or one special rite. It is a complete process that considers the physical, mental, emotional, and spiritual health of the parents and the unborn child. It includes suitable diet, exercise, enough sleep, stress management, positive thoughts, music, reading, and mutual love and bonding.",
-    "scienceBody": "GarbhaSetu combines traditional Garbha Sanskar practices with practical pregnancy wellness support. The focus is the parents’ wellbeing, informed choices, positive routines, and emotional connection. These practices do not predict a child’s traits or guarantee a pregnancy or birth outcome.",
-    "aspectsTitle": "Diet, mind, and bond",
-    "aspects": [
-      {
-        "id": "nourishment",
-        "title": "Diet and exercise",
-        "body": "Suitable sattvic diet, nourishing food, and safe exercise during pregnancy."
-      },
-      {
-        "id": "mind",
-        "title": "A positive mind",
-        "body": "A life with less stress, good reading, garbha sangeet, and positive thoughts."
-      },
-      {
-        "id": "bond",
-        "title": "Emotional bond",
-        "body": "Supportive communication helps parents and family build emotional connection during pregnancy."
-      }
-    ],
-    "equationKicker": "A healthy beginning",
-    "equationParts": [
-      "Healthy mother",
-      "Healthy environment",
-      "Informed parents"
-    ],
-    "equationResult": "A healthy beginning for the baby",
     "foundersTitle": "Founders",
     "jagrutName": "Dr. Jagrut Chauhan (BAMS)",
     "jagrutPlace": "Agnivesh Ayurvedic Clinic, Palanpur",
@@ -88,12 +58,85 @@
     "sanidhiAddress": "First floor, SF Sai Complex, Gobri Road, Palanpur, Gujarat 385001",
     "map": "Open in Google Maps",
     "call": "Call",
-    "photoDiet": "Diet and daily routine",
-    "photoMeditation": "Meditation, yoga, and prayer",
-    "photoLotus": "Garbha sangeet",
     "brandDescriptor": "Pregnancy wellness in Palanpur",
     "mapPreview": "If the map does not load, use the Google Maps link below.",
-    "mapFrameTitle": "Map for {clinic}"
+    "mapFrameTitle": "Map for {clinic}",
+    "heroEyebrow": "Pregnancy wellbeing, with culture and clinical context",
+    "heroTitle": "A thoughtful bridge through pregnancy",
+    "heroBody": "GarbhaSetu brings traditional Garbha Sanskar guidance and pregnancy physiotherapy into one calm, supportive care experience in Palanpur.",
+    "traditionKicker": "Tradition, clearly explained",
+    "traditionTitle": "Understanding Garbha Sanskar",
+    "traditionBody": "Garbha Sanskar is presented here as a cultural approach to thoughtful routines, reflection, family participation, and care during pregnancy. It can sit alongside regular antenatal healthcare, but it does not replace medical advice or predict a child’s qualities or birth outcome.",
+    "boundaryTitle": "A clear wellbeing boundary",
+    "boundaryBody": "Choose only activities that feel appropriate for you. Exercise, treatment, nutrition, and clinical timing need individual assessment from a qualified professional.",
+    "practicesKicker": "Everyday, optional practices",
+    "practicesTitle": "Small ways to create a supportive routine",
+    "practicesIntro": "The supplied GarbhaSetu material includes reading, music, conversation, creative reflection, and journaling. These are optional wellbeing activities, not prescriptions or promises.",
+    "practices": [
+      {
+        "id": "reading",
+        "title": "Reading and music",
+        "body": "Choose calm reading, prayer, singing, or music as personal reflection and relaxation activities.",
+        "imageAlt": "An open book beside a warm drink in soft natural light"
+      },
+      {
+        "id": "conversation",
+        "title": "Garbha Samvad",
+        "body": "Parents may use warm conversation to express feelings and build a personal sense of connection during pregnancy.",
+        "imageAlt": "Two people sharing a quiet conversation at home"
+      },
+      {
+        "id": "creative",
+        "title": "Creative reflection",
+        "body": "Drawing, painting, puzzles, or clay can be optional ways to pause, focus, and enjoy time together.",
+        "imageAlt": "A journal and art materials arranged on a table"
+      },
+      {
+        "id": "journal",
+        "title": "A wellness journal",
+        "body": "Simple notes about routines, questions, and follow-up dates can help prepare for discussions with the care team.",
+        "imageAlt": "A notebook open for reflective writing"
+      }
+    ],
+    "familyKicker": "Care includes the support circle",
+    "familyTitle": "Practical support from family and chosen companions",
+    "familyBody": "Support can mean listening, sharing daily work, attending education, preparing for birth, or helping after delivery. Every family and pregnancy is different, so participation should follow the parent’s preferences.",
+    "stagesKicker": "Explore care by stage",
+    "stagesTitle": "Support from pregnancy to postpartum",
+    "stagesIntro": "These links describe GarbhaSetu services. They are not a universal pregnancy timeline.",
+    "stages": [
+      {
+        "id": "antenatal",
+        "title": "Antenatal support",
+        "body": "Education, movement, posture, rest, and individual wellbeing guidance."
+      },
+      {
+        "id": "labour",
+        "title": "Labour preparation",
+        "body": "Breathing, positioning, partner education, and documented support options."
+      },
+      {
+        "id": "lactation",
+        "title": "Lactation support",
+        "body": "Positioning, latch education, posture, and comfort guidance after birth."
+      },
+      {
+        "id": "postpartum",
+        "title": "Postpartum rehabilitation",
+        "body": "Assessment-led support for gradual function, core, and pelvic-floor recovery."
+      }
+    ],
+    "learnMore": "Read the service details",
+    "sourceContextTitle": "Sources and context",
+    "sourceContextIntro": "Clinic material explains GarbhaSetu services and cultural framing. External references provide cultural or general health context; they do not endorse the clinic.",
+    "heroImageAlt": "A winding garden path surrounded by green plants",
+    "heroImageCaption": "Illustrative garden photograph; not a GarbhaSetu location.",
+    "heroImageCredit": "“Garden path at Capel Manor College Gardens” by Acabashi",
+    "heroLicense": "CC BY-SA 4.0",
+    "readingPhotoCaption": "Illustrative photograph of an open book and tea.",
+    "roomPhotoCaption": "Illustrative meeting room; not a GarbhaSetu facility.",
+    "meetingRoomAlt": "An empty meeting room with a table and chairs",
+    "heroModified": "Resized and converted to WebP."
   },
   "services": {
     "kicker": "Care at GarbhaSetu",
@@ -199,10 +242,6 @@
       "Breathing, relaxation, and labour positions taught beforehand"
     ],
     "labourPlansTitle": "Two ways labour support is offered",
-    "labourPlans": [
-      "Counselling, which is included in the package",
-      "The practitioner’s presence in labour, at an extra charge"
-    ],
     "lactationTitle": "Lactation support",
     "lactationIntro": "Guidance so that breastfeeding after birth can be simpler and more comfortable for mother and baby.",
     "lactationItems": [
@@ -240,11 +279,6 @@
     "timingTitle": "When postnatal exercise starts",
     "timingBody": "The start of exercise after birth is not the same for every mother. Whether the birth was a normal delivery or a caesarean section, what happened during the birth, and the medical condition should be assessed by the physiotherapist before the time is decided. A fixed rule of 6 weeks or 10 weeks should not be applied to everyone.",
     "neoTitle": "After birth",
-    "neoItems": [
-      "Neonatal care guidelines and nutrition guidelines as per Ayurveda",
-      "Advice for an abdominal binder, only under a gynaecologist’s guidance",
-      "Incision infection management is charged extra, per session"
-    ],
     "emotionTitle": "Parents and family",
     "emotionBody": "The father and the family have an important place in garbha sanskar. Counselling covers emotional support for the mother, help with daily tasks, preparation for birth, and taking part in the baby’s care. It also covers emotional changes after birth, including possible signs of postpartum depression, and encourages seeing a mental-health specialist when needed.",
     "facilitiesTitle": "Equipment and facilities",
@@ -265,7 +299,40 @@
       "Yellow light for meditation and dhyan",
       "Postpartum weight-reduction equipment only at Sanidhi Physiotherapy Clinic"
     ],
-    "sectionNav": "Service sections"
+    "sectionNav": "Service sections",
+    "journeyKicker": "Care pathways",
+    "journeyTitle": "Clear sections for each stage of care",
+    "journeyBody": "Choose a section to understand what the supplied GarbhaSetu material says. Individual assessment determines which clinical guidance applies.",
+    "ayurvedaImageAlt": "A basket filled with fresh vegetables",
+    "physioImageAlt": "An empty meeting room with a table and chairs",
+    "sourceContextTitle": "Sources and context",
+    "sourceContextIntro": "Clinic-provided information describes the current service material. General health references provide context only and do not validate a specific treatment.",
+    "labourPlansRich": [
+      {
+        "id": "counselling",
+        "text": "Counselling, which is included in the package"
+      },
+      {
+        "id": "presence",
+        "text": "The practitioner’s presence in labour, at an extra charge"
+      }
+    ],
+    "neoItemsRich": [
+      {
+        "id": "neonatal",
+        "text": "Neonatal care guidelines and nutrition guidelines as per Ayurveda"
+      },
+      {
+        "id": "binder",
+        "text": "Advice for an abdominal binder, only under a gynaecologist’s guidance"
+      },
+      {
+        "id": "incision",
+        "text": "Incision infection management is charged extra, per session"
+      }
+    ],
+    "foodPhotoCaption": "Illustrative photograph of a vegetable basket; not dietary advice.",
+    "roomPhotoCaption": "Illustrative meeting room; not a GarbhaSetu facility or care session."
   },
   "packages": {
     "kicker": "Fees",
@@ -379,7 +446,6 @@
   },
   "footer": {
     "rights": "GarbhaSetu, Palanpur",
-    "photos": "Brand and photograph sources are recorded in the project asset register.",
     "notice": "Information on this website is educational. Care and exercise plans require an individual assessment. WhatsApp is not an emergency service."
   },
   "notFound": {
@@ -387,5 +453,18 @@
     "body": "The page may have moved or the link may be incorrect. Use one of these links to continue.",
     "home": "Go to home",
     "contact": "Contact GarbhaSetu"
+  },
+  "sources": {
+    "prefix": "Source",
+    "details": "Read source details",
+    "title": "Sources and context",
+    "explanation": "These references identify clinic-provided information, cultural context, and general health guidance. Categories describe the kind of source; they are not approval badges.",
+    "clinicMaterial": "Clinic-provided information",
+    "culturalContext": "Cultural context",
+    "generalHealth": "General health guidance",
+    "locator": "Relevant section",
+    "language": "Source language",
+    "accessed": "Accessed",
+    "newTab": "opens in a new tab"
   }
 }
