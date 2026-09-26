@@ -5,35 +5,44 @@ export type Locale = (typeof locales)[number];
 
 const defaultLocale: Locale = "gu";
 const socialImagePath = "/brand/logo.jpg";
-
 function getSiteUrl(): URL {
-  const value = process.env.SITE_URL;
+  const value =
+    process.env.SITE_URL ||
+    (process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : undefined);
 
   if (!value) {
     throw new Error("SITE_URL must be set to the public HTTPS site origin.");
   }
 
   let url: URL;
+
   try {
     url = new URL(value);
   } catch {
-    throw new Error("SITE_URL must be a valid HTTPS site origin.");
+    throw new Error("SITE_URL must be a valid site origin.");
   }
 
+  const isLocalhost =
+    url.hostname === "localhost" ||
+    url.hostname === "127.0.0.1";
+
   if (
-    url.protocol !== "https:" ||
+    (!isLocalhost && url.protocol !== "https:") ||
     url.username ||
     url.password ||
     url.pathname !== "/" ||
     url.search ||
     url.hash
   ) {
-    throw new Error("SITE_URL must be an HTTPS origin without a path, query, or fragment.");
+    throw new Error(
+      "SITE_URL must be an HTTPS origin without a path, query, or fragment."
+    );
   }
 
   return url;
 }
-
 function routePath(locale: Locale, pathname: string): string {
   if (!pathname.startsWith("/")) {
     throw new Error("Metadata paths must start with '/'.");
