@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Baby, HeartPulse, Laptop, UserRound } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { createLocalizedMetadata, type Locale } from "@/lib/metadata";
 import { inr, prices } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -8,29 +9,25 @@ type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  return {
-    title: t("packagesTitle"),
-    description: t("packagesDescription"),
-    alternates: { languages: { gu: "/packages", en: "/en/packages" } },
-  };
+  return createLocalizedMetadata({ locale: locale as Locale, pathname: "/packages", title: t("packagesTitle"), description: t("packagesDescription") });
 }
 
-const planAmounts = [
-  prices.anc,
-  prices.ancPnc,
-  prices.lactation,
-  prices.labourOnline,
-  prices.labourPresence,
-] as const;
+const planDetails = {
+  anc: { amount: prices.anc, Icon: Laptop },
+  ancPnc: { amount: prices.ancPnc, Icon: Laptop },
+  lactation: { amount: prices.lactation, Icon: Baby },
+  labourOnline: { amount: prices.labourOnline, Icon: HeartPulse },
+  labourPresence: { amount: prices.labourPresence, Icon: UserRound },
+} as const;
 
 export default async function PackagesPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("packages");
-  const plans = t.raw("plans") as { title: string; detail: string }[];
+  const plans = t.raw("plans") as { id: keyof typeof planDetails | "incontinence"; title: string; detail: string }[];
   const conditions = t.raw("conditions") as string[];
-  const pricedPlans = plans.slice(0, planAmounts.length);
-  const incontinence = plans[planAmounts.length];
+  const pricedPlans = plans.filter((plan): plan is typeof plan & { id: keyof typeof planDetails } => plan.id in planDetails);
+  const incontinence = plans.find((plan) => plan.id === "incontinence");
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-14">
@@ -54,13 +51,13 @@ export default async function PackagesPage({ params }: Props) {
       </article>
 
       <div className="mt-4 grid gap-4 md:grid-cols-2">
-        {pricedPlans.map((plan, index) => {
-          const Icon = [Laptop, Laptop, Baby, HeartPulse, UserRound][index] ?? HeartPulse;
+        {pricedPlans.map((plan) => {
+          const { amount, Icon } = planDetails[plan.id];
           return (
-          <article key={plan.title} className="lift panel rounded-2xl p-5">
-            <Icon className="h-5 w-5 text-saffron" aria-hidden />
+          <article key={plan.id} className="lift panel rounded-2xl p-5">
+            <span className="icon-wrap"><Icon className="h-5 w-5" aria-hidden /></span>
             <h2 className="mt-3 text-lg text-maroon-deep">{plan.title}</h2>
-            <p className="mt-2 font-display text-4xl text-maroon">{inr(planAmounts[index])}</p>
+            <p className="mt-2 font-display text-4xl text-maroon">{inr(amount)}</p>
             <p className="mt-2 text-sm leading-6 text-ink-soft">{plan.detail}</p>
           </article>
           );
@@ -101,6 +98,7 @@ export default async function PackagesPage({ params }: Props) {
         <h2 className="text-xl text-maroon-deep">{t("ayurvedaTitle")}</h2>
         <p className="mt-2 leading-7">{t("ayurvedaBody")}</p>
       </article>
+      <p className="mt-6 text-sm leading-6 text-ink-soft">{t("pricingNotice")}</p>
     </div>
   );
 }

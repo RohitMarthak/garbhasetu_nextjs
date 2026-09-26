@@ -1,22 +1,26 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Noto_Sans_Gujarati } from "next/font/google";
+import localFont from "next/font/local";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { routing } from "@/i18n/routing";
+import { createLocalizedMetadata, type Locale } from "@/lib/metadata";
 import "../globals.css";
 
-const noto = Noto_Sans_Gujarati({
-  subsets: ["gujarati", "latin"],
+const noto = localFont({
+  src: "../fonts/noto-sans-gujarati-variable.ttf",
+  weight: "100 900",
   variable: "--font-noto-family",
   display: "swap",
 });
 
-const display = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["500", "600"],
+const display = localFont({
+  src: [
+    { path: "../fonts/cormorant-garamond-500.ttf", weight: "500" },
+    { path: "../fonts/cormorant-garamond-600.ttf", weight: "600" },
+  ],
   variable: "--font-display-family",
   display: "swap",
 });
@@ -33,12 +37,17 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
+  const metadata = createLocalizedMetadata({
+    locale: locale as Locale,
+    title: t("homeTitle"),
+    description: t("homeDescription"),
+  });
   return {
+    ...metadata,
     title: {
       default: t("homeTitle"),
       template: `%s · ${t("siteName")}`,
     },
-    description: t("homeDescription"),
   };
 }
 
@@ -53,8 +62,11 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale} className={`${noto.variable} ${display.variable}`}>
       <body className="frame min-h-screen antialiased">
         <NextIntlClientProvider messages={messages}>
+          <a href="#main-content" className="skip-link">
+            {messages.nav.skipToContent as string}
+          </a>
           <Header />
-          <main>{children}</main>
+          <main id="main-content" tabIndex={-1}>{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

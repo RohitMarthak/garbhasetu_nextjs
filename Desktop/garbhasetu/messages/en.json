@@ -18,7 +18,15 @@
     "whatsapp": "WhatsApp",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "language": "English"
+    "language": "English",
+    "appointment": "Request appointment",
+    "homeLabel": "GarbhaSetu home",
+    "primaryNav": "Primary navigation",
+    "mobileNav": "Mobile navigation",
+    "footerNav": "Footer navigation",
+    "switchToEnglish": "Switch to English",
+    "switchToGujarati": "Switch to Gujarati",
+    "skipToContent": "Skip to content"
   },
   "home": {
     "shloka": "॥ सर्वे भवन्तु सुखिनः ॥",
@@ -33,29 +41,40 @@
     "quote": "संस्कारो हि नाम गुणान्तराधानम्",
     "quoteMeaning": "Sanskar means the sacred act of transforming something, or a being, of lesser quality into superior qualities.",
     "examplesTitle": "Examples of sanskar",
-    "examples": ["Making curd from milk", "Making cooked rice from rice", "Making kadhi from buttermilk"],
+    "examples": [
+      "Making curd from milk",
+      "Making cooked rice from rice",
+      "Making kadhi from buttermilk"
+    ],
     "philosophyTitle": "Foundational idea",
-    "philosophyBody": "Just as a fine, high-quality crop needs a suitable seed, fertile and well-prepared soil, manure rich in nutrients, and proper irrigation and care, a healthy, strong, and virtuous child depends especially on the parents’ healthy bodies, a pure and capable reproductive seed, a sattvic and nourishing diet, and suitable conduct.",
+    "philosophyBody": "Traditional Garbha Sanskar uses the image of preparing seed, soil, nourishment, and care to explain thoughtful preparation for pregnancy. At GarbhaSetu, this means supporting the parents’ health, nourishing food, healthy routines, and a caring environment.",
     "wholeTitle": "A complete process",
     "wholeBody": "Garbha sanskar is not the name of one mantra, one puja, or one special rite. It is a complete process that considers the physical, mental, emotional, and spiritual health of the parents and the unborn child. It includes suitable diet, exercise, enough sleep, stress management, positive thoughts, music, reading, and mutual love and bonding.",
-    "scienceBody": "Garbha sanskar is not only a rite. It is a scientific process for the all-round development of the unborn child and the parents. It includes suitable diet, exercise, a life with less stress, positive thought, reading, and music. This process strengthens the emotional bond between the parents and the child, and lays the foundation of the child’s physical, mental, and spiritual health.",
+    "scienceBody": "GarbhaSetu combines traditional Garbha Sanskar practices with practical pregnancy wellness support. The focus is the parents’ wellbeing, informed choices, positive routines, and emotional connection. These practices do not predict a child’s traits or guarantee a pregnancy or birth outcome.",
     "aspectsTitle": "Diet, mind, and bond",
     "aspects": [
       {
+        "id": "nourishment",
         "title": "Diet and exercise",
         "body": "Suitable sattvic diet, nourishing food, and safe exercise during pregnancy."
       },
       {
+        "id": "mind",
         "title": "A positive mind",
         "body": "A life with less stress, good reading, garbha sangeet, and positive thoughts."
       },
       {
+        "id": "bond",
         "title": "Emotional bond",
-        "body": "The bond between the parents and the child supports the child’s physical, mental, and spiritual health."
+        "body": "Supportive communication helps parents and family build emotional connection during pregnancy."
       }
     ],
     "equationKicker": "A healthy beginning",
-    "equationParts": ["Healthy mother", "Healthy environment", "Informed parents"],
+    "equationParts": [
+      "Healthy mother",
+      "Healthy environment",
+      "Informed parents"
+    ],
     "equationResult": "A healthy beginning for the baby",
     "foundersTitle": "Founders",
     "jagrutName": "Dr. Jagrut Chauhan (BAMS)",
@@ -71,7 +90,10 @@
     "call": "Call",
     "photoDiet": "Diet and daily routine",
     "photoMeditation": "Meditation, yoga, and prayer",
-    "photoLotus": "Garbha sangeet"
+    "photoLotus": "Garbha sangeet",
+    "brandDescriptor": "Pregnancy wellness in Palanpur",
+    "mapPreview": "Map preview loads here. Use the Google Maps link below if it is unavailable.",
+    "mapFrameTitle": "Map for {clinic}"
   },
   "services": {
     "kicker": "Care at GarbhaSetu",
@@ -86,20 +108,20 @@
     "dietBody": "Ahara and vihara according to Ayurveda, including ritucharya and the garbhini routine, set out by trimester from classical Ayurvedic texts.",
     "mindTitle": "Psychological guidance",
     "mindItems": [
-      "Book reading chosen for the qualities the parents want in the child (manas prakriti, for example sattva and rajas), month by month",
+      "Month-by-month reading selected for reflection, values, and emotional wellbeing",
       "Swadhyay and prayer, including local prayers",
       "Meditation, Om and mantra chanting, and the mother’s humming and singing",
       "Yoga and pranayama suitable for pregnancy, and stress management",
       "Garbha sangeet and music for wellness and relaxation, for example Jijabai na halarda and Krishna-theme music",
       "Motivational and spiritual writing, listening, and reading",
-      "Positive manifestation about the baby"
+      "Positive reflection about pregnancy and parenthood"
     ],
     "samvadTitle": "Garbha samvad",
     "samvadBody": "During pregnancy, the parents connect with the unborn child through love, feeling, and positive emotion. They talk with the child, speak loving words, express their feelings, and share positive experiences together.",
     "activitiesTitle": "Personal daily activities on WhatsApp",
     "activitiesIntro": "A personal daily activity is sent on WhatsApp and checked each day.",
     "activities": [
-      "Drawing and painting, including mandala art, for the mother and baby’s concentration and creativity",
+      "Drawing and painting, including mandala art, as an optional creative activity for the mother",
       "Clay activity",
       "Maths activity",
       "Games and puzzles",
@@ -111,10 +133,26 @@
     "physioTitle": "Clinical care by Dr. Richa Madhu (PT)",
     "physioIntro": "Antenatal care, preparation for labour, lactation support, and postpartum assessment and management.",
     "pillars": [
-      { "title": "Antenatal care", "body": "Wellness and exercise during pregnancy." },
-      { "title": "Preparation for labour", "body": "Positioning and pelvic-floor preparation." },
-      { "title": "Lactation support", "body": "Latching, and care for neck and thoracic discomfort." },
-      { "title": "Postpartum care", "body": "Assessment, and recovery of the core and pelvic floor." }
+      {
+        "id": "antenatal",
+        "title": "Antenatal care",
+        "body": "Wellness and exercise during pregnancy."
+      },
+      {
+        "id": "labour",
+        "title": "Preparation for labour",
+        "body": "Positioning and pelvic-floor preparation."
+      },
+      {
+        "id": "lactation",
+        "title": "Lactation support",
+        "body": "Latching, and care for neck and thoracic discomfort."
+      },
+      {
+        "id": "postpartum",
+        "title": "Postpartum care",
+        "body": "Assessment, and recovery of the core and pelvic floor."
+      }
     ],
     "ancTitle": "Antenatal care",
     "ancItems": [
@@ -231,7 +269,7 @@
   "packages": {
     "kicker": "Fees",
     "title": "Packages and session charges",
-    "intro": "Offline sessions are at the clinic. Online plans include sessions twice a week and a daily task.",
+    "intro": "Offline sessions take place at the clinic. ANC and ANC plus PNC online plans include two weekly sessions and a daily activity.",
     "offlineTitle": "Offline package",
     "offlineSessions": "{sessions} sessions",
     "offlineRate": "{amount} per session",
@@ -240,26 +278,32 @@
     "offlinePay": "{amount}",
     "plans": [
       {
+        "id": "anc",
         "title": "ANC, online",
         "detail": "Twice a week online, plus a daily task. One plan."
       },
       {
+        "id": "ancPnc",
         "title": "ANC and PNC, online",
         "detail": "Twice a week online, plus a daily task."
       },
       {
+        "id": "lactation",
         "title": "Lactation, online",
         "detail": "One session."
       },
       {
+        "id": "labourOnline",
         "title": "Labour counselling, online",
         "detail": "One session. Counselling is also included in the package."
       },
       {
+        "id": "labourPresence",
         "title": "Presence during labour",
         "detail": "The practitioner’s presence in labour. This is an extra charge."
       },
       {
+        "id": "incontinence",
         "title": "Incontinence, offline",
         "detail": "Consultation, and a separate charge per session."
       }
@@ -281,7 +325,8 @@
     "consultLabel": "Consultation",
     "perSessionLabel": "Per session",
     "ayurvedaTitle": "Ayurvedic care",
-    "ayurvedaBody": "Ayurvedic consultation, treatment, and medicines are charged separately."
+    "ayurvedaBody": "Ayurvedic consultation, treatment, and medicines are charged separately.",
+    "pricingNotice": "Fees shown here come from the supplied clinic documents. Confirm the final amount and package details with the clinic before booking."
   },
   "contact": {
     "kicker": "Palanpur",
@@ -317,7 +362,7 @@
     },
     "errors": {
       "name": "Enter your name.",
-      "phone": "Enter a phone number with at least 10 digits.",
+      "phone": "Enter a phone number with 10 to 15 digits.",
       "need": "Select what you need.",
       "place": "Select a clinic."
     },
@@ -328,10 +373,20 @@
     "waPhone": "Phone",
     "waNeed": "Need",
     "waPlace": "Clinic",
-    "waMessage": "Message"
+    "waMessage": "Message",
+    "privacyNotice": "Your details stay in this form until you choose Open WhatsApp. WhatsApp will receive the prepared message. A request does not confirm an appointment. Do not include private medical records.",
+    "errorSummary": "Check the highlighted fields and try again.",
+    "blocked": "WhatsApp did not open. Use the link below to continue."
   },
   "footer": {
     "rights": "GarbhaSetu, Palanpur",
-    "photos": "Logo from the GarbhaSetu presentation. Photographs from Unsplash and Wikimedia Commons."
+    "photos": "Brand and photograph sources are recorded in the project asset register.",
+    "notice": "Information on this website is educational. Care and exercise plans require an individual assessment. WhatsApp is not an emergency service."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page may have moved or the link may be incorrect. Use one of these links to continue.",
+    "home": "Go to home",
+    "contact": "Contact GarbhaSetu"
   }
 }

@@ -26,13 +26,18 @@ export function Clinics() {
     <div className="grid gap-4 md:grid-cols-2">
       {clinics.map((clinic) => (
         <article key={clinic.name} className="lift panel overflow-hidden rounded-2xl">
-          <iframe
-            title={clinic.name}
-            src={mapEmbed(clinic.query)}
-            className="h-56 w-full border-0"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
+          <div className="relative h-56 overflow-hidden bg-cream-deep">
+            <div className="absolute inset-0 grid place-items-center px-6 text-center text-sm text-maroon-deep">
+              <span><MapPin className="mx-auto mb-2 h-6 w-6 text-saffron" aria-hidden />{t("mapPreview")}</span>
+            </div>
+            <iframe
+              title={t("mapFrameTitle", { clinic: clinic.name })}
+              src={mapEmbed(clinic.query)}
+              className="absolute inset-0 h-full w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
           <div className="p-5">
             <h3 className="flex items-start gap-2 text-lg font-medium text-maroon-deep">
               <MapPin className="mt-1 h-4 w-4 shrink-0 text-saffron" aria-hidden />
@@ -50,7 +55,7 @@ export function Clinics() {
               className="mt-3 inline-block text-sm text-saffron-deep underline-offset-2 hover:underline"
               href={mapsUrl(clinic.query)}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               {t("map")}
             </a>

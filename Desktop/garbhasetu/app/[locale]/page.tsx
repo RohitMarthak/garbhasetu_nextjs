@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Flower2, HeartHandshake, Utensils } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Clinics } from "@/components/Clinics";
 import { Link } from "@/i18n/navigation";
+import { createLocalizedMetadata, type Locale } from "@/lib/metadata";
 import { phones } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -10,41 +12,43 @@ type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  return {
-    title: { absolute: t("homeTitle") },
-    description: t("homeDescription"),
-    alternates: { languages: { gu: "/", en: "/en" } },
-  };
+  const metadata = createLocalizedMetadata({ locale: locale as Locale, title: t("homeTitle"), description: t("homeDescription") });
+  return { ...metadata, title: { absolute: t("homeTitle") } };
 }
 
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("home");
-  const aspects = t.raw("aspects") as { title: string; body: string }[];
+  const aspects = t.raw("aspects") as { id: "nourishment" | "mind" | "bond"; title: string; body: string }[];
   const examples = t.raw("examples") as string[];
   const parts = t.raw("equationParts") as string[];
 
   return (
     <>
-      <section className="mx-auto max-w-5xl px-5 pt-8 pb-6">
-        <div className="rise overflow-hidden rounded-3xl bg-white shadow-sm">
-          <img src="/brand/logo.jpg" alt={t("tagline")} className="w-full" />
-        </div>
-        <h1 className="rise rise-2 mt-6 font-display text-4xl text-maroon-deep sm:text-5xl">GarbhaSetu</h1>
-        <p className="mt-3 max-w-xl text-lg leading-8 text-ink">{t("tagline")}</p>
-        <p className="mt-5 text-sm uppercase tracking-[0.14em] text-ink-soft">{t("founderKicker")}</p>
-        <p className="mt-1 text-ink-soft">{t("founderRole")}</p>
-        <div className="rise rise-3 mt-8 flex flex-wrap gap-3">
-          <Link href="/services" className="rounded-full bg-maroon px-5 py-2.5 text-sm text-cream hover:bg-maroon-deep">
-            {t("ctaServices")}
-          </Link>
-          <Link
-            href="/contact"
-            className="rounded-full border border-maroon px-5 py-2.5 text-sm text-maroon hover:bg-cream-deep"
-          >
-            {t("ctaContact")}
-          </Link>
+      <section className="mx-auto max-w-5xl px-5 pt-8 pb-8 sm:pt-12">
+        <div className="hero-grid rise overflow-hidden rounded-[2rem] border border-line bg-paper shadow-[0_24px_70px_rgb(84_31_44/0.08)]">
+          <div className="p-7 sm:p-10 lg:p-12">
+            <p lang="sa" className="text-sm tracking-[0.15em] text-saffron-deep">{t("shloka")}</p>
+            <h1 className="mt-5 font-display text-5xl leading-none text-maroon-deep sm:text-6xl">GarbhaSetu</h1>
+            <p className="mt-5 max-w-xl text-lg leading-8 text-ink">{t("tagline")}</p>
+            <p className="mt-6 text-sm uppercase tracking-[0.14em] text-maroon">{t("founderKicker")}</p>
+            <p className="mt-1 text-sm text-ink-soft">{t("founderRole")}</p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <Link href="/services" className="rounded-full bg-maroon px-5 py-3 text-sm text-cream hover:bg-maroon-deep">
+                {t("ctaServices")}
+              </Link>
+              <Link href="/contact" className="rounded-full border border-maroon px-5 py-3 text-sm text-maroon hover:bg-cream-deep">
+                {t("ctaContact")}
+              </Link>
+            </div>
+          </div>
+          <div className="hero-art relative grid min-h-72 place-items-center overflow-hidden p-8 sm:min-h-96">
+            <span className="absolute inset-8 rounded-full border border-white/40" aria-hidden />
+            <div className="relative h-64 w-60 overflow-hidden rounded-[40%] bg-paper/95 p-4 shadow-xl sm:h-80 sm:w-72">
+              <Image src="/brand/mark.png" alt="" fill priority sizes="(max-width: 768px) 240px, 288px" className="object-contain p-3" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -83,25 +87,27 @@ export default async function HomePage({ params }: Props) {
         </div>
         <h3 className="mt-8 text-xl text-maroon">{t("aspectsTitle")}</h3>
         <div className="mt-4 grid gap-4 md:grid-cols-3">
-          {aspects.map((aspect, index) => {
-            const Icon = [Utensils, Flower2, HeartHandshake][index] ?? Flower2;
+          {aspects.map((aspect) => {
+            const Icon = { nourishment: Utensils, mind: Flower2, bond: HeartHandshake }[aspect.id];
             return (
-              <article key={aspect.title} className="lift panel rounded-2xl p-5">
-                <Icon className="h-6 w-6 text-saffron" aria-hidden />
+              <article key={aspect.id} className="lift panel rounded-2xl p-5">
+                <span className="icon-wrap"><Icon className="h-5 w-5" aria-hidden /></span>
                 <h4 className="mt-3 text-lg text-maroon-deep">{aspect.title}</h4>
                 <p className="mt-2 text-sm leading-6 text-ink-soft">{aspect.body}</p>
               </article>
             );
           })}
         </div>
-        <div className="reveal mt-8 grid gap-4 md:grid-cols-3">
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
           {[
             { src: "/photos/spices.jpg", caption: t("photoDiet") },
             { src: "/photos/meditation.jpg", caption: t("photoMeditation") },
             { src: "/photos/lotus.jpg", caption: t("photoLotus") },
           ].map((photo) => (
             <figure key={photo.src} className="lift panel overflow-hidden rounded-2xl">
-              <img src={photo.src} alt={photo.caption} className="photo-zoom h-52 w-full object-cover" />
+              <div className="relative h-52 overflow-hidden">
+                <Image src={photo.src} alt={photo.caption} fill sizes="(max-width: 768px) 100vw, 33vw" className="photo-zoom object-cover" />
+              </div>
               <figcaption className="px-4 py-3 text-sm text-maroon-deep">{photo.caption}</figcaption>
             </figure>
           ))}
