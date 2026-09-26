@@ -27,9 +27,6 @@ export function Clinics() {
       {clinics.map((clinic) => (
         <article key={clinic.name} className="lift panel overflow-hidden rounded-2xl">
           <div className="relative h-56 overflow-hidden bg-cream-deep">
-            <div className="absolute inset-0 grid place-items-center px-6 text-center text-sm text-maroon-deep">
-              <span><MapPin className="mx-auto mb-2 h-6 w-6 text-saffron" aria-hidden />{t("mapPreview")}</span>
-            </div>
             <iframe
               title={t("mapFrameTitle", { clinic: clinic.name })}
               src={mapEmbed(clinic.query)}
@@ -39,6 +36,9 @@ export function Clinics() {
             />
           </div>
           <div className="p-5">
+            <p className="mb-4 rounded-xl bg-cream px-4 py-3 text-sm leading-6 text-ink-soft">
+              {t("mapPreview")}
+            </p>
             <h3 className="flex items-start gap-2 text-lg font-medium text-maroon-deep">
               <MapPin className="mt-1 h-4 w-4 shrink-0 text-saffron" aria-hidden />
               {clinic.name}

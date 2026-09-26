@@ -35,7 +35,7 @@ export default async function ServicesPage({ params }: Props) {
       <h1 className="mt-2 font-display text-5xl text-maroon-deep">{t("title")}</h1>
       <p className="mt-4 max-w-2xl leading-7">{t("intro")}</p>
 
-      <nav className="mt-6 flex flex-wrap gap-3 text-sm">
+      <nav aria-label={t("sectionNav")} className="mt-6 flex flex-wrap gap-3 text-sm">
         <a className="rounded-full border border-line px-3 py-1.5 hover:border-saffron" href="#ayurveda">
           {t("ayurvedaTitle")}
         </a>

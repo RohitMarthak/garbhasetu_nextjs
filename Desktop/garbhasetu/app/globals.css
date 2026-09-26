@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-noto-family), "Noto Sans Gujarati", sans-serif;
-  --font-display: var(--font-display-family), Georgia, serif;
+  --font-sans: var(--font-noto-gujarati), var(--font-noto-latin), var(--font-devanagari-family), "Noto Sans Gujarati", sans-serif;
+  --font-display: var(--font-display-family), var(--font-noto-gujarati), var(--font-noto-latin), var(--font-devanagari-family), Georgia, serif;
   --color-cream: #f6f0e4;
   --color-cream-deep: #eadcc6;
   --color-paper: #fffaf3;
@@ -14,6 +14,7 @@
   --color-saffron-deep: #8d5414;
   --color-leaf: #3d5644;
   --color-line: #e2d3bc;
+  --color-line-strong: #9f8b72;
 }
 
 html {
@@ -35,7 +36,7 @@ textarea {
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-saffron);
+  outline: 3px solid var(--color-saffron-deep);
 }
 
 .skip-link {
@@ -45,7 +46,7 @@ textarea {
   z-index: 100;
   transform: translateY(-200%);
   border-radius: 999px;
-  background: var(--color-paper);
+  background: white;
   color: var(--color-maroon-deep);
   padding: 0.65rem 1rem;
   box-shadow: 0 8px 24px rgb(84 31 44 / 18%);
@@ -90,7 +91,7 @@ textarea {
   overflow: hidden;
   border: 1px solid rgb(193 122 43 / 28%);
   border-radius: 35%;
-  background: var(--color-paper);
+  background: white;
   box-shadow: 0 5px 18px rgb(84 31 44 / 10%);
 }
 
@@ -163,6 +164,12 @@ textarea {
   }
 }
 
+@media (max-width: 380px) {
+  .brand-compact .brand-wordmark {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -170,8 +177,7 @@ textarea {
 
   .lift,
   .photo-zoom,
-  .rise,
-  .reveal {
+  .rise {
     animation: none;
     transition: none;
   }

@@ -8,7 +8,6 @@ export function GET() {
     "User-Agent: *",
     "Allow: /",
     "",
-    `Host: ${siteUrl.origin}`,
     `Sitemap: ${new URL("/sitemap.xml", siteUrl)}`,
     "",
   ].join("\n");
