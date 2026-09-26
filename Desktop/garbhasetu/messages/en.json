@@ -1,0 +1,337 @@
+{
+  "meta": {
+    "siteName": "GarbhaSetu",
+    "homeTitle": "GarbhaSetu",
+    "homeDescription": "GarbhaSetu brings Ayurveda and physiotherapy together for pregnancy, birth, lactation, and postpartum care in Palanpur.",
+    "servicesTitle": "Services",
+    "servicesDescription": "Ayurvedic garbha sanskar with Dr. Jagrut Chauhan and pregnancy physiotherapy with Dr. Richa Madhu.",
+    "packagesTitle": "Packages",
+    "packagesDescription": "Offline and online packages for garbha sanskar, antenatal care, labour, lactation, and postpartum physiotherapy.",
+    "contactTitle": "Contact",
+    "contactDescription": "Request an appointment at Agnivesh Ayurveda and Panchkarma Clinic or Sanidhi Physiotherapy and Fitness Centre, Palanpur."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "packages": "Packages",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "English"
+  },
+  "home": {
+    "shloka": "॥ सर्वे भवन्तु सुखिनः ॥",
+    "tagline": "Science meets Sanskar: a bridge to a brighter future",
+    "founderKicker": "Founders of GarbhaSetu",
+    "founderRole": "Professional pregnancy wellness practitioners",
+    "ctaServices": "Services",
+    "ctaContact": "Request an appointment",
+    "definitionKicker": "Concept of Garbhasanskar",
+    "definitionTitle": "Garbha + sanskar = garbha sanskar",
+    "definitionBody": "The sanskar done upon the garbha is called garbha sanskar.",
+    "quote": "संस्कारो हि नाम गुणान्तराधानम्",
+    "quoteMeaning": "Sanskar means the sacred act of transforming something, or a being, of lesser quality into superior qualities.",
+    "examplesTitle": "Examples of sanskar",
+    "examples": ["Making curd from milk", "Making cooked rice from rice", "Making kadhi from buttermilk"],
+    "philosophyTitle": "Foundational idea",
+    "philosophyBody": "Just as a fine, high-quality crop needs a suitable seed, fertile and well-prepared soil, manure rich in nutrients, and proper irrigation and care, a healthy, strong, and virtuous child depends especially on the parents’ healthy bodies, a pure and capable reproductive seed, a sattvic and nourishing diet, and suitable conduct.",
+    "wholeTitle": "A complete process",
+    "wholeBody": "Garbha sanskar is not the name of one mantra, one puja, or one special rite. It is a complete process that considers the physical, mental, emotional, and spiritual health of the parents and the unborn child. It includes suitable diet, exercise, enough sleep, stress management, positive thoughts, music, reading, and mutual love and bonding.",
+    "scienceBody": "Garbha sanskar is not only a rite. It is a scientific process for the all-round development of the unborn child and the parents. It includes suitable diet, exercise, a life with less stress, positive thought, reading, and music. This process strengthens the emotional bond between the parents and the child, and lays the foundation of the child’s physical, mental, and spiritual health.",
+    "aspectsTitle": "Diet, mind, and bond",
+    "aspects": [
+      {
+        "title": "Diet and exercise",
+        "body": "Suitable sattvic diet, nourishing food, and safe exercise during pregnancy."
+      },
+      {
+        "title": "A positive mind",
+        "body": "A life with less stress, good reading, garbha sangeet, and positive thoughts."
+      },
+      {
+        "title": "Emotional bond",
+        "body": "The bond between the parents and the child supports the child’s physical, mental, and spiritual health."
+      }
+    ],
+    "equationKicker": "A healthy beginning",
+    "equationParts": ["Healthy mother", "Healthy environment", "Informed parents"],
+    "equationResult": "A healthy beginning for the baby",
+    "foundersTitle": "Founders",
+    "jagrutName": "Dr. Jagrut Chauhan (BAMS)",
+    "jagrutPlace": "Agnivesh Ayurvedic Clinic, Palanpur",
+    "richaName": "Dr. Richa Madhu (PT)",
+    "richaPlace": "Physio Harmony",
+    "clinicsTitle": "Clinic locations",
+    "agniveshName": "Agnivesh Ayurveda and Panchkarma Clinic",
+    "agniveshAddress": "F6, 1st floor, Time Square Complex, Deesa–Palanpur Highway, near One Center Mall, Sardar Patel Nagar, Palanpur, Gujarat 385001",
+    "sanidhiName": "Sanidhi Physiotherapy and Fitness Centre",
+    "sanidhiAddress": "First floor, SF Sai Complex, Gobri Road, Palanpur, Gujarat 385001",
+    "map": "Open in Google Maps",
+    "call": "Call",
+    "photoDiet": "Diet and daily routine",
+    "photoMeditation": "Meditation, yoga, and prayer",
+    "photoLotus": "Garbha sangeet"
+  },
+  "services": {
+    "kicker": "Care at GarbhaSetu",
+    "title": "Ayurveda and physiotherapy",
+    "intro": "Garbha sanskar guidance with Dr. Jagrut Chauhan, and pregnancy physiotherapy with Dr. Richa Madhu.",
+    "ayurvedaKicker": "Ayurvedic traditional values",
+    "ayurvedaTitle": "Guided by Dr. Jagrut Chauhan (BAMS)",
+    "ayurvedaIntro": "Counselling, diet and daily routine, and psychological and spiritual guidance.",
+    "counselTitle": "Counselling",
+    "counselBody": "Personal sessions for the parents’ questions, preparation of mindset, and emotional wellbeing through pregnancy.",
+    "dietTitle": "Diet and daily routine",
+    "dietBody": "Ahara and vihara according to Ayurveda, including ritucharya and the garbhini routine, set out by trimester from classical Ayurvedic texts.",
+    "mindTitle": "Psychological guidance",
+    "mindItems": [
+      "Book reading chosen for the qualities the parents want in the child (manas prakriti, for example sattva and rajas), month by month",
+      "Swadhyay and prayer, including local prayers",
+      "Meditation, Om and mantra chanting, and the mother’s humming and singing",
+      "Yoga and pranayama suitable for pregnancy, and stress management",
+      "Garbha sangeet and music for wellness and relaxation, for example Jijabai na halarda and Krishna-theme music",
+      "Motivational and spiritual writing, listening, and reading",
+      "Positive manifestation about the baby"
+    ],
+    "samvadTitle": "Garbha samvad",
+    "samvadBody": "During pregnancy, the parents connect with the unborn child through love, feeling, and positive emotion. They talk with the child, speak loving words, express their feelings, and share positive experiences together.",
+    "activitiesTitle": "Personal daily activities on WhatsApp",
+    "activitiesIntro": "A personal daily activity is sent on WhatsApp and checked each day.",
+    "activities": [
+      "Drawing and painting, including mandala art, for the mother and baby’s concentration and creativity",
+      "Clay activity",
+      "Maths activity",
+      "Games and puzzles",
+      "Positive visualization and manifestation"
+    ],
+    "journalTitle": "Daily wellness journal",
+    "journalBody": "A journal is given for daily food, hours of sleep, medicine, water intake, an exercise chart, a checkbox for the daily task, the follow-up date, and session notes. It also includes education about body weight, with a positive approach.",
+    "physioKicker": "Physiotherapy approach",
+    "physioTitle": "Clinical care by Dr. Richa Madhu (PT)",
+    "physioIntro": "Antenatal care, preparation for labour, lactation support, and postpartum assessment and management.",
+    "pillars": [
+      { "title": "Antenatal care", "body": "Wellness and exercise during pregnancy." },
+      { "title": "Preparation for labour", "body": "Positioning and pelvic-floor preparation." },
+      { "title": "Lactation support", "body": "Latching, and care for neck and thoracic discomfort." },
+      { "title": "Postpartum care", "body": "Assessment, and recovery of the core and pelvic floor." }
+    ],
+    "ancTitle": "Antenatal care",
+    "ancItems": [
+      "Awareness of psychological changes during pregnancy, and an explanation of physiological changes",
+      "Lifestyle changes, including nutrition guidelines, and sleep and rest",
+      "Musculoskeletal pain management",
+      "Sleep position, sitting position, and changes for daily work",
+      "Breathing exercises for relaxation, and for intercostal pain and discomfort"
+    ],
+    "safetyTitle": "During pregnancy",
+    "safetyBody": "Physiotherapy electrical modalities are not given in the childbearing period. TENS and therapeutic ultrasound are not used during antenatal care.",
+    "exerciseTitle": "Pregnancy-related safe exercise",
+    "exerciseIntro": "These are taught according to the stage of pregnancy and the mother’s own needs.",
+    "exerciseItems": [
+      "Whole-body gentle mobility exercise",
+      "Pelvic mobility exercise",
+      "Upper- and lower-limb strengthening, with or without resistance, in a low-risk mother",
+      "Gentle stretching",
+      "Aerobic exercise",
+      "Precautions for diastasis recti abdominis"
+    ],
+    "familyTitle": "Family education",
+    "familyItems": [
+      "Do’s and don’ts",
+      "Education and awareness for the father and the family",
+      "Partner involvement, supportive communication, and massage techniques for labour",
+      "Warning signs and red flags that need immediate contact with the consultant"
+    ],
+    "redFlagsTitle": "Contact the consultant immediately for",
+    "redFlags": [
+      "Vaginal bleeding or fluid leakage",
+      "Severe abdominal pain or sudden swelling",
+      "Decreased fetal movements",
+      "Persistent high fever"
+    ],
+    "labourTitle": "Labour",
+    "labourItems": [
+      "A partner or relative for emotional support and tactile stimulation",
+      "Breath control in labour",
+      "Pelvic-floor muscle relaxation",
+      "Positions in labour on a physio ball",
+      "TENS and massage for pain relief in labour",
+      "A cooling pad for pain after a vaginal delivery",
+      "Breathing, relaxation, and labour positions taught beforehand"
+    ],
+    "labourPlansTitle": "Two ways labour support is offered",
+    "labourPlans": [
+      "Counselling, which is included in the package",
+      "The practitioner’s presence in labour, at an extra charge"
+    ],
+    "lactationTitle": "Lactation support",
+    "lactationIntro": "Guidance so that breastfeeding after birth can be simpler and more comfortable for mother and baby.",
+    "lactationItems": [
+      "Correct latching technique",
+      "The mother’s positioning",
+      "Postural guidance",
+      "Neck and thoracic pain management",
+      "Advice for nipple pain and irritation during breastfeeding",
+      "Advice for flat or inverted nipples",
+      "Advice on a nipple shield for flat, inverted, or cracked nipples",
+      "Advice about massage on the breasts",
+      "Teaching the mother about a pump, if needed",
+      "Nutrition guidelines during lactation"
+    ],
+    "postTitle": "Postpartum physiotherapy",
+    "postIntro": "A personal programme to bring the body gradually back toward its previous function. The timing is decided after assessment. It is not the same for every mother.",
+    "postItems": [
+      "Postpartum assessment",
+      "Education about the pelvic floor muscles, with the help of a model",
+      "Pelvic floor and Kegel exercises",
+      "Breathing exercise",
+      "Gentle mobility",
+      "Pain management",
+      "Functional activity progression: lifting the baby, sitting, standing, and daily activities",
+      "Diastasis recti assessment and management",
+      "Postpartum core training",
+      "Functional rehabilitation",
+      "Pelvic-floor training with Vonfidans",
+      "Urinary and faecal incontinence rehabilitation",
+      "Vaginal laxity: assessment and guidance",
+      "Stretching and strengthening",
+      "Caesarean incision positioning advice and scar mobilisation",
+      "Scar mobilisation, at the right time, for an earlier surgery or another scar"
+    ],
+    "timingTitle": "When postnatal exercise starts",
+    "timingBody": "The start of exercise after birth is not the same for every mother. Whether the birth was a normal delivery or a caesarean section, what happened during the birth, and the medical condition should be assessed by the physiotherapist before the time is decided. A fixed rule of 6 weeks or 10 weeks should not be applied to everyone.",
+    "neoTitle": "After birth",
+    "neoItems": [
+      "Neonatal care guidelines and nutrition guidelines as per Ayurveda",
+      "Advice for an abdominal binder, only under a gynaecologist’s guidance",
+      "Incision infection management is charged extra, per session"
+    ],
+    "emotionTitle": "Parents and family",
+    "emotionBody": "The father and the family have an important place in garbha sanskar. Counselling covers emotional support for the mother, help with daily tasks, preparation for birth, and taking part in the baby’s care. It also covers emotional changes after birth, including possible signs of postpartum depression, and encourages seeing a mental-health specialist when needed.",
+    "facilitiesTitle": "Equipment and facilities",
+    "modalitiesTitle": "Electrical modalities",
+    "modalities": [
+      "TENS and therapeutic ultrasound for pain management after delivery",
+      "Electrical stimulation for pelvic-floor training in incontinence, prolapse, and vaginal laxity after birth"
+    ],
+    "toolsTitle": "Other equipment",
+    "tools": [
+      "Vonfidans, for pelvic-floor assessment and rehabilitation",
+      "Physio ball for labour positions",
+      "500 g to 1 kg dumbbells and resistance bands for strengthening in antenatal and postnatal care"
+    ],
+    "roomsTitle": "Rooms",
+    "rooms": [
+      "Air conditioning, and a speaker for garbha sangeet",
+      "Yellow light for meditation and dhyan",
+      "Postpartum weight-reduction equipment only at Sanidhi Physiotherapy Clinic"
+    ]
+  },
+  "packages": {
+    "kicker": "Fees",
+    "title": "Packages and session charges",
+    "intro": "Offline sessions are at the clinic. Online plans include sessions twice a week and a daily task.",
+    "offlineTitle": "Offline package",
+    "offlineSessions": "{sessions} sessions",
+    "offlineRate": "{amount} per session",
+    "offlineList": "{amount}",
+    "offlineDiscount": "{percent}% discount",
+    "offlinePay": "{amount}",
+    "plans": [
+      {
+        "title": "ANC, online",
+        "detail": "Twice a week online, plus a daily task. One plan."
+      },
+      {
+        "title": "ANC and PNC, online",
+        "detail": "Twice a week online, plus a daily task."
+      },
+      {
+        "title": "Lactation, online",
+        "detail": "One session."
+      },
+      {
+        "title": "Labour counselling, online",
+        "detail": "One session. Counselling is also included in the package."
+      },
+      {
+        "title": "Presence during labour",
+        "detail": "The practitioner’s presence in labour. This is an extra charge."
+      },
+      {
+        "title": "Incontinence, offline",
+        "detail": "Consultation, and a separate charge per session."
+      }
+    ],
+    "sessionTitle": "Other offline physiotherapy sessions",
+    "sessionBody": "{amount} per session for the conditions below.",
+    "conditions": [
+      "Incontinence",
+      "Vaginismus",
+      "Vaginal laxity",
+      "Diastasis recti",
+      "PIVD",
+      "Prolapse",
+      "Incision infection",
+      "Postpartum postural pain"
+    ],
+    "extraTitle": "Caesarean incision infection",
+    "extraBody": "Infection management is an extra {amount} per session.",
+    "consultLabel": "Consultation",
+    "perSessionLabel": "Per session",
+    "ayurvedaTitle": "Ayurvedic care",
+    "ayurvedaBody": "Ayurvedic consultation, treatment, and medicines are charged separately."
+  },
+  "contact": {
+    "kicker": "Palanpur",
+    "title": "Appointment request",
+    "intro": "Send a request on WhatsApp. Ayurveda and garbha sanskar go to Dr. Jagrut Chauhan. Physiotherapy goes to Dr. Richa Madhu.",
+    "name": "Name",
+    "phone": "Phone",
+    "need": "What you need",
+    "place": "Preferred clinic",
+    "message": "Message",
+    "messageOptional": "Optional",
+    "submit": "Open WhatsApp",
+    "needPlaceholder": "Select",
+    "placePlaceholder": "Select a clinic",
+    "needs": {
+      "antenatal": "Antenatal care",
+      "labour": "Labour",
+      "lactation": "Lactation",
+      "postpartum": "Postpartum care",
+      "ayurveda": "Ayurveda / garbha sanskar",
+      "incontinence": "Incontinence",
+      "vaginismus": "Vaginismus",
+      "vaginalLaxity": "Vaginal laxity",
+      "diastasis": "Diastasis recti",
+      "pivd": "PIVD",
+      "prolapse": "Prolapse",
+      "incisionInfection": "Incision infection",
+      "posturalPain": "Postpartum postural pain"
+    },
+    "places": {
+      "agnivesh": "Agnivesh Ayurveda and Panchkarma Clinic",
+      "sanidhi": "Sanidhi Physiotherapy and Fitness Centre"
+    },
+    "errors": {
+      "name": "Enter your name.",
+      "phone": "Enter a phone number with at least 10 digits.",
+      "need": "Select what you need.",
+      "place": "Select a clinic."
+    },
+    "opened": "WhatsApp should open with your message. If it does not, use the link below.",
+    "openedLink": "Open the WhatsApp chat",
+    "waPreviewTitle": "GarbhaSetu — appointment request",
+    "waName": "Name",
+    "waPhone": "Phone",
+    "waNeed": "Need",
+    "waPlace": "Clinic",
+    "waMessage": "Message"
+  },
+  "footer": {
+    "rights": "GarbhaSetu, Palanpur",
+    "photos": "Logo from the GarbhaSetu presentation. Photographs from Unsplash and Wikimedia Commons."
+  }
+}
