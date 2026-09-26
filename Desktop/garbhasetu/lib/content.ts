@@ -1,3 +1,4 @@
+import "server-only";
 import sourceRecords from "./content-sources.json";
 import sectionRecords from "./content-sections.json";
 

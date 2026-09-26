@@ -57,8 +57,8 @@ export default async function HomePage({ params }: Props) {
             <Image src="/photos/hero-garden-path.webp" alt={t("heroImageAlt")} fill priority sizes="(max-width: 767px) 100vw, 44vw" className="object-cover" />
             <figcaption className="absolute inset-x-4 bottom-4 rounded-2xl bg-paper/95 p-3 text-xs leading-5 text-ink-soft shadow-lg backdrop-blur-sm">
               <span>{t("heroImageCaption")}</span>{" "}
-              <a className="text-maroon underline" href="https://commons.wikimedia.org/wiki/File:Garden_path_Capel_Manor_College_Gardens_Enfield_London_England_01.jpg" target="_blank" rel="noreferrer">{t("heroImageCredit")}</a>{" "}
-              <a className="text-maroon underline" href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noreferrer">{t("heroLicense")}</a>
+              <a className="text-maroon underline" href="https://commons.wikimedia.org/wiki/File:Garden_path_Capel_Manor_College_Gardens_Enfield_London_England_01.jpg">{t("heroImageCredit")}</a>{" "}
+              <a className="text-maroon underline" href="https://creativecommons.org/licenses/by-sa/4.0">{t("heroLicense")}</a> <span>{t("heroModified")}</span>
             </figcaption>
           </figure>
         </div>
@@ -107,7 +107,11 @@ export default async function HomePage({ params }: Props) {
               return (
                 <article key={practice.id} className="practice-card panel overflow-hidden rounded-3xl">
                   <div className={`relative ${media.kind === "photo" ? "h-56" : "grid h-48 place-items-center bg-cream-deep/55 p-8 text-maroon"}`}>
-                    <Image src={media.src} alt={media.kind === "photo" ? practice.imageAlt : ""} fill={media.kind === "photo"} width={media.kind === "illustration" ? 240 : undefined} height={media.kind === "illustration" ? 180 : undefined} sizes="(max-width: 640px) 100vw, 50vw" className={media.kind === "photo" ? "object-cover" : "h-full w-auto"} />
+                    {media.kind === "photo" ? (
+                      <Image src={media.src} alt={practice.imageAlt} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" />
+                    ) : (
+                      <Image src={media.src} alt="" width={240} height={180} unoptimized className="h-full w-auto" />
+                    )}
                   </div>
                   <div className="p-6">
                     <span className="icon-wrap"><Icon className="h-5 w-5" aria-hidden /></span>
@@ -125,7 +129,7 @@ export default async function HomePage({ params }: Props) {
       <section id="family-support" className="mx-auto max-w-5xl scroll-mt-24 px-5 py-14">
         <div className="editorial-split items-center">
           <div className="relative min-h-72 overflow-hidden rounded-3xl">
-            <Image src="/photos/conversation-meeting-room.webp" alt={t("practices.1.imageAlt")} fill sizes="(max-width: 767px) 100vw, 50vw" className="object-cover" />
+            <Image src="/photos/conversation-meeting-room.webp" alt={t("meetingRoomAlt")} fill sizes="(max-width: 767px) 100vw, 50vw" className="object-cover" />
             <p className="absolute inset-x-4 bottom-4 rounded-xl bg-paper/95 px-3 py-2 text-xs text-ink-soft">{t("roomPhotoCaption")}</p>
           </div>
           <div>
@@ -139,7 +143,7 @@ export default async function HomePage({ params }: Props) {
 
       <section id="care-stages" className="bg-maroon-deep text-cream">
         <div className="mx-auto max-w-5xl px-5 py-14">
-          <p className="text-xs uppercase tracking-[0.16em] text-saffron">{t("stagesKicker")}</p>
+          <p className="text-xs uppercase tracking-[0.16em] text-[#f1c982]">{t("stagesKicker")}</p>
           <h2 className="mt-2 font-display text-4xl">{t("stagesTitle")}</h2>
           <p className="mt-4 max-w-2xl leading-7 text-cream/80">{t("stagesIntro")}</p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -147,7 +151,7 @@ export default async function HomePage({ params }: Props) {
               <Link key={stage.id} href={`/services#${stage.id}`} className="stage-link rounded-2xl border border-cream/20 bg-cream/8 p-5">
                 <h3 className="text-lg text-cream">{stage.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-cream/70">{stage.body}</p>
-                <span className="mt-4 inline-flex items-center gap-2 text-sm text-saffron">{t("learnMore")}<ArrowRight className="h-4 w-4" aria-hidden /></span>
+                <span className="mt-4 inline-flex items-center gap-2 text-sm text-[#f1c982]">{t("learnMore")}<ArrowRight className="h-4 w-4" aria-hidden /></span>
               </Link>
             ))}
           </div>
@@ -165,7 +169,7 @@ export default async function HomePage({ params }: Props) {
 
       <section className="mx-auto max-w-5xl px-5 pb-8"><h2 className="mb-4 text-2xl text-maroon-deep">{t("clinicsTitle")}</h2><Clinics /></section>
 
-      <SourceList sectionIds={["home-garbha-sanskar-framing", "home-optional-practices", "home-family-support"]} locale={locale} title={t("sourceContextTitle")} className="mx-auto max-w-5xl px-5 py-12" />
+      <SourceList sectionIds={["home-garbha-sanskar-framing", "home-optional-practices", "home-family-support"]} locale={locale} title={t("sourceContextTitle")} intro={t("sourceContextIntro")} className="mx-auto max-w-5xl px-5 py-12" />
     </>
   );
 }

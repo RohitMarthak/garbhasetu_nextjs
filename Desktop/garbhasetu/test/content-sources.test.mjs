@@ -62,15 +62,19 @@ test("section citations resolve to routes, translations, sources, and real fragm
     assert.ok(section.messageKeys.length && section.sourceIds.length && section.limitations);
     assert.ok(["factual", "cultural", "clinical", "operational"].includes(section.claimCategory));
     for (const sourceId of section.sourceIds) assert.ok(sourceIds.has(sourceId), `${section.id} uses known source ${sourceId}`);
+    const page = await readFile(new URL(routes.get(section.route), root), "utf8");
     for (const locale of ["en", "gu"]) {
-      for (const key of section.messageKeys) assert.notEqual(await messageValue(locale, key), undefined, `${section.id} key ${key} exists in ${locale}`);
+      for (const key of section.messageKeys) {
+        assert.notEqual(await messageValue(locale, key), undefined, `${section.id} key ${key} exists in ${locale}`);
+        const localKey = key.split(".").slice(1).join(".");
+        assert.match(page, new RegExp(`t(?:\\.raw)?\\(["']${localKey.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}["']\\)`), `${section.id} key ${key} is referenced by its route`);
+      }
     }
     for (const category of ["factual", "cultural", "clinical", "operational"]) {
       assert.ok(reviewStates.has(section.review[category]), `${section.id} has ${category} review state`);
     }
     if (section.fragment !== null) {
       assert.match(section.fragment, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
-      const page = await readFile(new URL(routes.get(section.route), root), "utf8");
       assert.match(page, new RegExp(`id=["']${section.fragment}["']`), `${section.id} fragment exists on its route`);
     }
   }

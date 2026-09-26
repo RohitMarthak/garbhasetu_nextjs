@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return createLocalizedMetadata({ locale: locale as Locale, pathname: "/services", title: t("servicesTitle"), description: t("servicesDescription") });
 }
 
-function Block({ title, children, id }: { title: string; children: React.ReactNode; id?: string }) {
-  return <section id={id} className="service-block scroll-mt-28"><h3 className="text-xl text-maroon-deep">{title}</h3><div className="mt-3">{children}</div></section>;
+function Block({ title, children }: { title: string; children: React.ReactNode }) {
+  return <section><h3 className="text-xl text-maroon-deep">{title}</h3><div className="mt-3">{children}</div></section>;
 }
 
 export default async function ServicesPage({ params }: Props) {
@@ -72,12 +72,12 @@ export default async function ServicesPage({ params }: Props) {
             </div>
             <figure className="relative min-h-72 overflow-hidden">
               <Image src="/photos/food-vegetable-basket.webp" alt={t("ayurvedaImageAlt")} fill sizes="(max-width: 767px) 100vw, 50vw" className="object-cover" />
-              <figcaption className="absolute inset-x-4 bottom-4 rounded-xl bg-paper/95 p-3 text-xs text-ink-soft">{t("sectionContext")}</figcaption>
+              <figcaption className="absolute inset-x-4 bottom-4 rounded-xl bg-paper/95 p-3 text-xs text-ink-soft">{t("foodPhotoCaption")}</figcaption>
             </figure>
           </div>
           <div className="grid gap-8 border-t border-line p-7 sm:p-9 md:grid-cols-2">
             <Block title={t("counselTitle")}><p className="leading-7">{t("counselBody")}</p></Block>
-            <Block title={t("dietTitle")}><p className="leading-7">{t("dietBody")}</p></Block>
+            <Block title={t("dietTitle")}><Image src="/illustrations/nourishment.svg" alt="" width={96} height={72} unoptimized className="mb-3 h-16 w-auto text-maroon" /><p className="leading-7">{t("dietBody")}</p></Block>
             <Block title={t("mindTitle")}><BulletList items={t.raw("mindItems") as string[]} /></Block>
             <div className="space-y-8">
               <Block title={t("samvadTitle")}><p className="leading-7">{t("samvadBody")}</p></Block>
@@ -92,14 +92,14 @@ export default async function ServicesPage({ params }: Props) {
         <div className="overflow-hidden rounded-[2rem] bg-maroon-deep text-cream">
           <div className="editorial-split gap-0">
             <div className="p-7 sm:p-9">
-              <p className="text-xs uppercase tracking-[0.16em] text-saffron">{t("physioKicker")}</p>
+              <p className="text-xs uppercase tracking-[0.16em] text-[#f1c982]">{t("physioKicker")}</p>
               <h2 className="mt-2 text-3xl text-cream">{t("physioTitle")}</h2>
               <p className="mt-4 leading-7 text-cream/80">{t("physioIntro")}</p>
-              <SourceNote sourceIds={["clinic-presentation-2026", "clinic-garbhasanskar-guide-2026", "who-antenatal-care-2016"]} locale={locale} className="mt-3 text-sm leading-6 text-cream/70 [&_a]:text-saffron [&_span]:text-saffron" />
+              <SourceNote sourceIds={["clinic-presentation-2026", "clinic-garbhasanskar-guide-2026", "who-antenatal-care-2016"]} locale={locale} className="mt-3 text-sm leading-6 text-cream/85 [&_a]:text-[#f1c982] [&_span]:text-[#f1c982]" />
             </div>
             <figure className="relative min-h-72 overflow-hidden">
               <Image src="/photos/conversation-meeting-room.webp" alt={t("physioImageAlt")} fill sizes="(max-width: 767px) 100vw, 50vw" className="object-cover" />
-              <figcaption className="absolute inset-x-4 bottom-4 rounded-xl bg-maroon-deep/95 p-3 text-xs text-cream/80">{t("sectionContext")}</figcaption>
+              <figcaption className="absolute inset-x-4 bottom-4 rounded-xl bg-maroon-deep/95 p-3 text-xs text-cream/90">{t("roomPhotoCaption")}</figcaption>
             </figure>
           </div>
         </div>
@@ -139,7 +139,7 @@ export default async function ServicesPage({ params }: Props) {
         </div>
       </article>
 
-      <SourceList sectionIds={["services-ayurvedic-counselling", "services-antenatal-support", "services-exercise-context", "services-labour-support", "services-lactation-and-postpartum", "services-facilities"]} locale={locale} title={t("sourceContextTitle")} />
+      <SourceList sectionIds={["services-ayurvedic-counselling", "services-antenatal-support", "services-exercise-context", "services-labour-support", "services-lactation-support", "services-postpartum-support", "services-facilities"]} locale={locale} title={t("sourceContextTitle")} intro={t("sourceContextIntro")} />
     </div>
   );
 }
