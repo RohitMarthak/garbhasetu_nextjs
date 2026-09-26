@@ -25,7 +25,7 @@ The ICC/profile copyright strings found in some JPEGs identify colour-profile ve
 
 ## Local font files
 
-The application self-hosts subset WOFF2 files for Noto Sans Gujarati and Cormorant Garamond from Google Fonts. The files live in `app/fonts/` with their SIL Open Font License texts. Self-hosting prevents missing Gujarati glyphs and removes a runtime dependency on Google Fonts. The font files use the official `fonts.gstatic.com` URLs returned by the Google Fonts CSS API and load on demand without route-level preloads.
+The application self-hosts subset WOFF2 files for Noto Sans Gujarati, Noto Sans Devanagari, and Cormorant Garamond from Google Fonts. The files live in `app/fonts/` with their SIL Open Font License texts. Separate font families provide Gujarati body text, Sanskrit Devanagari text, and Latin text without device-font dependence. The font files use official `fonts.gstatic.com` URLs returned by the Google Fonts CSS API and load on demand without route-level preloads.
 
 ## Required source record for each asset
 

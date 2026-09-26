@@ -84,7 +84,7 @@ export function AppointmentForm() {
   }
 
   const fieldClass =
-    "mt-1 w-full rounded-xl border border-[#9f8b72] bg-paper px-3 py-2.5 text-ink outline-none ring-saffron-deep focus:ring-2";
+    "mt-1 w-full rounded-xl border border-line-strong bg-paper px-3 py-2.5 text-ink outline-none ring-saffron-deep focus:ring-2";
 
   function onFormChange(event: React.ChangeEvent<HTMLFormElement>) {
     const field = (event.target as unknown as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement).name as Field;

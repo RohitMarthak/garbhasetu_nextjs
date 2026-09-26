@@ -5,7 +5,7 @@ export function Brand({ inverse = false, compact = false }: { inverse?: boolean;
   const home = useTranslations("home");
 
   return (
-    <span className="inline-flex items-center gap-3">
+    <span className={`inline-flex items-center gap-3 ${compact ? "brand-compact" : ""}`}>
       <span
         className={`brand-mark ${compact ? "h-11 w-11" : "h-14 w-14"}`}
         aria-hidden="true"

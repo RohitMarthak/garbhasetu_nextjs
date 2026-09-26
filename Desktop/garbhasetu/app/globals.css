@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-noto-family), "Noto Sans Gujarati", sans-serif;
-  --font-display: var(--font-display-family), Georgia, serif;
+  --font-sans: var(--font-noto-gujarati), var(--font-noto-latin), var(--font-devanagari-family), "Noto Sans Gujarati", sans-serif;
+  --font-display: var(--font-display-family), var(--font-noto-gujarati), var(--font-noto-latin), var(--font-devanagari-family), Georgia, serif;
   --color-cream: #f6f0e4;
   --color-cream-deep: #eadcc6;
   --color-paper: #fffaf3;
@@ -14,6 +14,7 @@
   --color-saffron-deep: #8d5414;
   --color-leaf: #3d5644;
   --color-line: #e2d3bc;
+  --color-line-strong: #9f8b72;
 }
 
 html {
@@ -164,7 +165,7 @@ textarea {
 }
 
 @media (max-width: 380px) {
-  .brand-wordmark {
+  .brand-compact .brand-wordmark {
     display: none;
   }
 }
