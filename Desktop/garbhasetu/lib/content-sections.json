@@ -1,0 +1,162 @@
+[
+  {
+    "id": "home-garbha-sanskar-framing",
+    "route": "/",
+    "fragment": null,
+    "messageKeys": ["home.definitionTitle", "home.definitionBody", "home.philosophyTitle", "home.philosophyBody"],
+    "sourceIds": ["clinic-presentation-2026", "clinic-garbhasanskar-guide-2026", "britannica-samskara-cultural-context-2026"],
+    "claimCategory": "cultural",
+    "limitations": "The clinic's framing is identified as clinic-provided information. Britannica provides cultural context only; neither source establishes medical efficacy or predicts a child's traits, health, sex, intelligence, or birth outcome.",
+    "publicationStatus": "existing-pending-review",
+    "review": {
+      "factual": "verified-source",
+      "cultural": "verified-source",
+      "clinical": "not-applicable",
+      "operational": "pending-review"
+    }
+  },
+  {
+    "id": "home-optional-practices",
+    "route": "/",
+    "fragment": null,
+    "messageKeys": ["home.examplesTitle", "home.examples", "home.aspectsTitle", "home.aspects"],
+    "sourceIds": ["clinic-presentation-2026", "clinic-garbhasanskar-guide-2026"],
+    "claimCategory": "cultural",
+    "limitations": "Reading, music, reflection, creative activity, and conversation are optional parent activities in the clinic material. Do not infer fetal benefit, a prescribed timetable, or a guaranteed outcome.",
+    "publicationStatus": "existing-pending-review",
+    "review": {
+      "factual": "verified-source",
+      "cultural": "verified-source",
+      "clinical": "not-applicable",
+      "operational": "pending-review"
+    }
+  },
+  {
+    "id": "home-family-support",
+    "route": "/",
+    "fragment": null,
+    "messageKeys": ["home.wholeTitle", "home.wholeBody", "home.scienceBody"],
+    "sourceIds": ["clinic-presentation-2026", "clinic-garbhasanskar-guide-2026", "who-antenatal-care-2016"],
+    "claimCategory": "factual",
+    "limitations": "WHO supplies general person-centred antenatal-care context. It does not verify the clinic's family-support offering or imply that every household has the same needs.",
+    "publicationStatus": "existing-pending-review",
+    "review": {
+      "factual": "verified-source",
+      "cultural": "not-applicable",
+      "clinical": "pending-practitioner-review",
+      "operational": "pending-review"
+    }
+  },
+  {
+    "id": "services-ayurvedic-counselling",
+    "route": "/services",
+    "fragment": "ayurveda",
+    "messageKeys": ["services.ayurvedaTitle", "services.counselTitle", "services.dietTitle", "services.mindTitle", "services.samvadTitle", "services.activitiesTitle", "services.journalTitle"],
+    "sourceIds": ["clinic-presentation-2026", "clinic-garbhasanskar-guide-2026"],
+    "claimCategory": "clinical",
+    "limitations": "This is clinic-provided material. It does not independently establish the safety or effectiveness of any Ayurvedic counselling, diet, routine, medicine, or activity; all additions require practitioner review.",
+    "publicationStatus": "existing-pending-review",
+    "review": {
+      "factual": "verified-source",
+      "cultural": "verified-source",
+      "clinical": "pending-practitioner-review",
+      "operational": "pending-review"
+    }
+  },
+  {
+    "id": "services-antenatal-support",
+    "route": "/services",
+    "fragment": "physiotherapy",
+    "messageKeys": ["services.ancTitle", "services.ancItems", "services.safetyTitle", "services.safetyBody", "services.familyTitle", "services.redFlagsTitle"],
+    "sourceIds": ["clinic-presentation-2026", "clinic-garbhasanskar-guide-2026", "who-antenatal-care-2016"],
+    "claimCategory": "clinical",
+    "limitations": "WHO is general guidance, not evidence that any listed clinic intervention is suitable for an individual. Clinic-specific warning signs, equipment, referral boundaries, and emergency language remain pending practitioner review.",
+    "publicationStatus": "existing-pending-review",
+    "review": {
+      "factual": "verified-source",
+      "cultural": "not-applicable",
+      "clinical": "pending-practitioner-review",
+      "operational": "pending-review"
+    }
+  },
+  {
+    "id": "services-exercise-context",
+    "route": "/services",
+    "fragment": "physiotherapy",
+    "messageKeys": ["services.exerciseTitle", "services.exerciseIntro", "services.exerciseItems"],
+    "sourceIds": ["clinic-presentation-2026", "acog-exercise-during-pregnancy"],
+    "claimCategory": "clinical",
+    "limitations": "ACOG provides general assessment-and-safety context only. It is not evidence for a universal exercise programme, a dosage, this clinic's approach, or a substitute for individual clinical advice.",
+    "publicationStatus": "existing-pending-review",
+    "review": {
+      "factual": "verified-source",
+      "cultural": "not-applicable",
+      "clinical": "pending-practitioner-review",
+      "operational": "pending-review"
+    }
+  },
+  {
+    "id": "services-labour-support",
+    "route": "/services",
+    "fragment": "physiotherapy",
+    "messageKeys": ["services.labourTitle", "services.labourItems", "services.labourPlansTitle", "services.labourPlans"],
+    "sourceIds": ["clinic-presentation-2026"],
+    "claimCategory": "clinical",
+    "limitations": "This is clinic-provided material, not a universal labour-care protocol. Suitability, clinician responsibility, modality restrictions, availability, and any fee remain pending practitioner review.",
+    "publicationStatus": "existing-pending-review",
+    "review": {
+      "factual": "verified-source",
+      "cultural": "not-applicable",
+      "clinical": "pending-practitioner-review",
+      "operational": "pending-review"
+    }
+  },
+  {
+    "id": "services-lactation-and-postpartum",
+    "route": "/services",
+    "fragment": "physiotherapy",
+    "messageKeys": ["services.lactationTitle", "services.lactationItems", "services.postTitle", "services.postItems", "services.timingTitle", "services.emotionTitle"],
+    "sourceIds": ["clinic-presentation-2026", "clinic-garbhasanskar-guide-2026"],
+    "claimCategory": "clinical",
+    "limitations": "The guide supports individualised postpartum timing rather than a fixed timetable. Lactation, scar, infection, pelvic-floor, emotional-wellbeing, and referral wording remain pending practitioner review.",
+    "publicationStatus": "existing-pending-review",
+    "review": {
+      "factual": "verified-source",
+      "cultural": "not-applicable",
+      "clinical": "pending-practitioner-review",
+      "operational": "pending-review"
+    }
+  },
+  {
+    "id": "services-facilities",
+    "route": "/services",
+    "fragment": "facilities",
+    "messageKeys": ["services.facilitiesTitle", "services.modalitiesTitle", "services.toolsTitle", "services.roomsTitle"],
+    "sourceIds": ["clinic-presentation-2026"],
+    "claimCategory": "operational",
+    "limitations": "The supplied presentation lists equipment and facilities but does not verify current ownership, location, availability, indication, or suitability. Do not present a facility list as a treatment recommendation.",
+    "publicationStatus": "existing-pending-review",
+    "review": {
+      "factual": "verified-source",
+      "cultural": "not-applicable",
+      "clinical": "pending-practitioner-review",
+      "operational": "pending-practitioner-review"
+    }
+  },
+  {
+    "id": "packages-and-fees",
+    "route": "/packages",
+    "fragment": null,
+    "messageKeys": ["packages.offlineTitle", "packages.plans", "packages.sessionTitle", "packages.extraTitle", "packages.ayurvedaTitle", "packages.pricingNotice"],
+    "sourceIds": ["clinic-presentation-2026"],
+    "claimCategory": "operational",
+    "limitations": "All public amounts, delivery modes, frequencies, additional charges, and availability are clinic-provided and unverified pending practitioner approval. Known pricing conflicts remain in docs/content-audit.md.",
+    "publicationStatus": "existing-pending-review",
+    "review": {
+      "factual": "verified-source",
+      "cultural": "not-applicable",
+      "clinical": "not-applicable",
+      "operational": "pending-practitioner-review"
+    }
+  }
+]

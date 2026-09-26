@@ -93,7 +93,85 @@
     "photoLotus": "Garbha sangeet",
     "brandDescriptor": "Pregnancy wellness in Palanpur",
     "mapPreview": "If the map does not load, use the Google Maps link below.",
-    "mapFrameTitle": "Map for {clinic}"
+    "mapFrameTitle": "Map for {clinic}",
+    "heroEyebrow": "Pregnancy wellbeing, with culture and clinical context",
+    "heroTitle": "A thoughtful bridge through pregnancy",
+    "heroBody": "GarbhaSetu brings traditional Garbha Sanskar guidance and pregnancy physiotherapy into one calm, supportive care experience in Palanpur.",
+    "traditionKicker": "Tradition, clearly explained",
+    "traditionTitle": "Understanding Garbha Sanskar",
+    "traditionBody": "Garbha Sanskar is presented here as a cultural approach to thoughtful routines, reflection, family participation, and care during pregnancy. It can sit alongside regular antenatal healthcare, but it does not replace medical advice or predict a child’s qualities or birth outcome.",
+    "boundaryTitle": "A clear wellbeing boundary",
+    "boundaryBody": "Choose only activities that feel appropriate for you. Exercise, treatment, nutrition, and clinical timing need individual assessment from a qualified professional.",
+    "practicesKicker": "Everyday, optional practices",
+    "practicesTitle": "Small ways to create a supportive routine",
+    "practicesIntro": "The supplied GarbhaSetu material includes reading, music, conversation, creative reflection, and journaling. These are optional wellbeing activities, not prescriptions or promises.",
+    "practices": [
+      {
+        "id": "reading",
+        "title": "Reading and music",
+        "body": "Choose calm reading, prayer, singing, or music as personal reflection and relaxation activities.",
+        "imageAlt": "An open book beside a warm drink in soft natural light"
+      },
+      {
+        "id": "conversation",
+        "title": "Garbha Samvad",
+        "body": "Parents may use warm conversation to express feelings and build a personal sense of connection during pregnancy.",
+        "imageAlt": "Two people sharing a quiet conversation at home"
+      },
+      {
+        "id": "creative",
+        "title": "Creative reflection",
+        "body": "Drawing, painting, puzzles, or clay can be optional ways to pause, focus, and enjoy time together.",
+        "imageAlt": "A journal and art materials arranged on a table"
+      },
+      {
+        "id": "journal",
+        "title": "A wellness journal",
+        "body": "Simple notes about routines, questions, and follow-up dates can help prepare for discussions with the care team.",
+        "imageAlt": "A notebook open for reflective writing"
+      }
+    ],
+    "familyKicker": "Care includes the support circle",
+    "familyTitle": "Practical support from family and chosen companions",
+    "familyBody": "Support can mean listening, sharing daily work, attending education, preparing for birth, or helping after delivery. Every family and pregnancy is different, so participation should follow the parent’s preferences.",
+    "familyImageAlt": "Family members preparing a simple meal together",
+    "stagesKicker": "Explore care by stage",
+    "stagesTitle": "Support from pregnancy to postpartum",
+    "stagesIntro": "These links describe GarbhaSetu services. They are not a universal pregnancy timeline.",
+    "stages": [
+      {
+        "id": "antenatal",
+        "title": "Antenatal support",
+        "body": "Education, movement, posture, rest, and individual wellbeing guidance."
+      },
+      {
+        "id": "labour",
+        "title": "Labour preparation",
+        "body": "Breathing, positioning, partner education, and documented support options."
+      },
+      {
+        "id": "lactation",
+        "title": "Lactation support",
+        "body": "Positioning, latch education, posture, and comfort guidance after birth."
+      },
+      {
+        "id": "postpartum",
+        "title": "Postpartum rehabilitation",
+        "body": "Assessment-led support for gradual function, core, and pelvic-floor recovery."
+      }
+    ],
+    "illustrativePhoto": "Illustrative photograph",
+    "learnMore": "Read the service details",
+    "sourceContextTitle": "Sources and context",
+    "sourceContextIntro": "Clinic material explains GarbhaSetu services and cultural framing. External references provide cultural or general health context; they do not endorse the clinic.",
+    "heroImageAlt": "A winding garden path surrounded by green plants",
+    "heroImageCaption": "Illustrative garden photograph; not a GarbhaSetu location.",
+    "heroImageCredit": "“Garden path at Capel Manor College Gardens” by Acabashi",
+    "heroLicense": "CC BY-SA 4.0",
+    "readingPhotoCaption": "Illustrative photograph of an open book and tea.",
+    "foodPhotoCaption": "Illustrative photograph of a vegetable basket; not dietary advice.",
+    "roomPhotoCaption": "Illustrative meeting room; not a GarbhaSetu facility.",
+    "photoCreditsTitle": "Image information"
   },
   "services": {
     "kicker": "Care at GarbhaSetu",
@@ -265,7 +343,39 @@
       "Yellow light for meditation and dhyan",
       "Postpartum weight-reduction equipment only at Sanidhi Physiotherapy Clinic"
     ],
-    "sectionNav": "Service sections"
+    "sectionNav": "Service sections",
+    "journeyKicker": "Care pathways",
+    "journeyTitle": "Clear sections for each stage of care",
+    "journeyBody": "Choose a section to understand what the supplied GarbhaSetu material says. Individual assessment determines which clinical guidance applies.",
+    "ayurvedaImageAlt": "Fresh ingredients and a notebook arranged for meal planning",
+    "physioImageAlt": "A calm professional conversation in a bright care setting",
+    "sectionContext": "Service information from the supplied GarbhaSetu material",
+    "sourceContextTitle": "Sources and context",
+    "sourceContextIntro": "Clinic-provided information describes the current service material. General health references provide context only and do not validate a specific treatment.",
+    "labourPlansRich": [
+      {
+        "id": "counselling",
+        "text": "Counselling, which is included in the package"
+      },
+      {
+        "id": "presence",
+        "text": "The practitioner’s presence in labour, at an extra charge"
+      }
+    ],
+    "neoItemsRich": [
+      {
+        "id": "neonatal",
+        "text": "Neonatal care guidelines and nutrition guidelines as per Ayurveda"
+      },
+      {
+        "id": "binder",
+        "text": "Advice for an abdominal binder, only under a gynaecologist’s guidance"
+      },
+      {
+        "id": "incision",
+        "text": "Incision infection management is charged extra, per session"
+      }
+    ]
   },
   "packages": {
     "kicker": "Fees",

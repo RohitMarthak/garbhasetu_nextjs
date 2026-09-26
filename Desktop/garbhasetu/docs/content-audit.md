@@ -119,3 +119,54 @@ All values below are currently public and **unverified pending practitioner appr
 3. A physiotherapist reviews all `PR-CLINICAL` items, including timing, modality distinctions, warning signs, lactation, postpartum, facilities, and referral/emergency wording.
 4. **Implemented pending practitioner wording review:** bilingual footer and appointment-form notices state that content is educational, care needs individual assessment, and WhatsApp is not an emergency service.
 5. **Implemented pending practitioner wording review:** outcome-promising language was replaced in both message files. Verify that the safer English and Gujarati wording matches practitioner intent.
+
+## Static provenance register and citation rules
+
+`lib/content-sources.json` is the repository-managed source register. Each stable source ID records its category, title, publisher/author, external URL or private internal-document path, verified locator, known publication/update date, access date, source language, verification status, and a short conservative statement of what the source actually supports. Unknown dates remain `null`; do not infer them. Evidence text is a short paraphrase, not a copied extract.
+
+`lib/content-sections.json` maps each stable editorial section ID to a route and, where the current route has one, an existing fragment. It lists the shared English/Gujarati message keys, source IDs, claim category, limitations, publication status, and separate factual, cultural, clinical, and operational review states. Neither register contains a reviewer name or date until a real review has occurred. `lib/content.ts` validates the records and provides server-only lookup helpers.
+
+### Patient-facing categories
+
+The source components use the following explanatory categories. They identify the kind of material, **not** an approval badge or endorsement:
+
+- **Clinic-provided information** — supplied GarbhaSetu documents describe the clinic's stated material. They do not independently prove availability, qualifications, price, safety, or efficacy.
+- **Cultural context** — a cultural reference can explain a tradition. It is not medical evidence and must not be used to imply fetal-development, pregnancy, or birth outcomes.
+- **General health guidance** — an external health reference supports only its stated general context. It does not validate Garbha Sanskar or prescribe a GarbhaSetu service.
+
+Public source lists may show a source title, publisher, verified locator, language, and external URL when one exists. They must not link to raw repository documents, internal working notes, approval discussion, commercial notes, or unpublished PDFs. The register’s working-notes record is deliberately non-public.
+
+### Initial registered sources
+
+| Source ID | Category | Exact locator and recorded limit |
+| --- | --- | --- |
+| `clinic-presentation-2026` | Clinic-provided information | `GarbhaSetu_Presentation_.pdf`, physical pages 3–28 of the 32-page supplied file. Supports only the clinic’s stated framing, service topics, facilities, and package material. |
+| `clinic-garbhasanskar-guide-2026` | Clinic-provided information | `garbhsanskar_guide.pdf`, physical pages 1–3. Its postpartum material supports individual assessment, not a universal timetable. |
+| `clinic-details-working-notes-2026` | Clinic-provided information (internal only) | `details.md`, lines 1–329. Used as a cross-check; it includes drafts/conflicts and is never a public citation. |
+| `who-antenatal-care-2016` | General health guidance | WHO, *WHO recommendations on antenatal care for a positive pregnancy experience*, guiding principles/person-centred-care overview: https://www.who.int/publications/i/item/9789241549912. It does not evaluate Garbha Sanskar or clinic services. |
+| `acog-exercise-during-pregnancy` | General health guidance | ACOG, *Exercise During Pregnancy*, FAQ sections “Is exercise safe during pregnancy?” and “When should I not exercise during pregnancy?”: https://www.acog.org/womens-health/faqs/exercise-during-pregnancy. It is not a universal programme, dosage, or local emergency protocol. |
+| `britannica-samskara-cultural-context-2026` | Cultural context | Encyclopaedia Britannica, *Samskara*, entry overview: https://www.britannica.com/topic/samskara-Hindu-passage-rite. It supports rites-of-passage context only, not medical efficacy. |
+
+### Editing and publication gate
+
+1. Use a stable semantic ID; never select citations by array position. Both language versions use the same section and source IDs, while their copy remains in `messages/en.json` and `messages/gu.json`.
+2. Any material change to the cited source, locator, English copy, Gujarati copy, claim meaning, route, or limitation invalidates the related review state. Change the status to the appropriate pending state before publishing the revision.
+3. A new factual or cultural addition may use `published` only with exact, verified source support and explicit limitations. A clinical addition additionally requires `clinical: practitioner-reviewed`; source verification alone is not clinical approval.
+4. Existing public material uses `existing-pending-review` so the register documents the baseline without falsely upgrading it. New draft material stays `draft`; excluded material stays `excluded` and must not be selected by a public component.
+5. A source note must use `SourceNote` and point to the matching same-page `SourceList` entry. Render only an explicit `sourceIds` or `sectionIds` selection. Keep the source-list explanation visible and keyboard-accessible; do not replace it with tiny superscripts, tooltips, or a modal.
+6. Run `node --test test/content-sources.test.mjs` after register changes. The focused provenance test checks unique IDs, allowed HTTPS URLs, private document paths, source associations, message keys in both languages, real route fragments, and the no-bypass rule for newly published clinical content.
+
+### Current section register disposition
+
+| Section ID | Source selection | Publication/review disposition |
+| --- | --- | --- |
+| `home-garbha-sanskar-framing` | Clinic presentation, guide, Britannica | Existing public baseline; cultural source verified, operational wording pending review. |
+| `home-optional-practices` | Clinic presentation and guide | Existing public baseline; optional-activity boundary retained. |
+| `home-family-support` | Clinic presentation, guide, WHO | Existing public baseline; clinical context remains pending practitioner review. |
+| `services-ayurvedic-counselling` | Clinic presentation and guide | Existing public baseline; clinical and operational claims pending review. |
+| `services-antenatal-support` | Clinic presentation, guide, WHO | Existing public baseline; clinical/referral/equipment wording pending review. |
+| `services-exercise-context` | Clinic presentation and ACOG | Existing public baseline; ACOG is general context only and clinical review remains pending. |
+| `services-labour-support` | Clinic presentation | Existing public baseline; safety, availability, and fees remain pending review. |
+| `services-lactation-and-postpartum` | Clinic presentation and guide | Existing public baseline; timing remains individualised and clinical review is pending. |
+| `services-facilities` | Clinic presentation | Existing public baseline; availability and suitability remain pending review. |
+| `packages-and-fees` | Clinic presentation | Existing public baseline; all prices/operations remain unverified as documented above. |
