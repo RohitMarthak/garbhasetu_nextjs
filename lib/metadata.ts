@@ -10,7 +10,7 @@ function getSiteUrl(): URL {
     process.env.SITE_URL ||
     (process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
-      : undefined);
+      : "https://garbhasetu.com");
 
   if (!value) {
     throw new Error("SITE_URL must be set to the public HTTPS site origin.");

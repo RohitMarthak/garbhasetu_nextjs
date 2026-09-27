@@ -84,24 +84,35 @@ export function AppointmentForm() {
   }
 
   const fieldClass =
-    "mt-1 w-full rounded-xl border border-line bg-paper px-3 py-2.5 text-ink outline-none ring-saffron focus:ring-2";
+    "mt-1.5 w-full rounded-xl border border-[#E6DFD1] bg-[#FAF6EE] px-3.5 py-2.5 text-sm text-[#142621] outline-none transition-all focus:border-[#153C33] focus:bg-white focus:ring-2 focus:ring-[#153C33]/10";
 
   return (
-    <form ref={formRef} onSubmit={onSubmit} onChange={() => { setChatUrl(""); setStatus(""); }} noValidate className="panel rounded-2xl p-5 sm:p-6">
-      <p className="mb-5 rounded-xl bg-cream px-4 py-3 text-sm leading-6 text-ink-soft">{t("privacyNotice")}</p>
-      <div className="grid gap-4 sm:grid-cols-2">
-        <label className="block text-sm">
-          {t("name")} <span aria-hidden="true" className="text-maroon">*</span>
+    <form
+      ref={formRef}
+      onSubmit={onSubmit}
+      onChange={() => {
+        setChatUrl("");
+        setStatus("");
+      }}
+      noValidate
+      className="rounded-3xl border border-[#E6DFD1] bg-white p-6 sm:p-8 shadow-xs"
+    >
+      <p className="mb-6 rounded-2xl bg-[#F4EFE4] border border-[#E6DFD1] px-4 py-3 text-xs sm:text-sm leading-relaxed text-[#445951]">
+        {t("privacyNotice")}
+      </p>
+      <div className="grid gap-5 sm:grid-cols-2">
+        <label className="block text-xs font-semibold text-[#142621]">
+          {t("name")} <span aria-hidden="true" className="text-rose-600">*</span>
           <input name="name" autoComplete="name" required maxLength={80} aria-invalid={Boolean(errors.name)} aria-describedby={errors.name ? "name-error" : undefined} className={fieldClass} />
-          {errors.name ? <span id="name-error" className="mt-1 block text-maroon">{errors.name}</span> : null}
+          {errors.name ? <span id="name-error" className="mt-1 block text-xs text-rose-600 font-medium">{errors.name}</span> : null}
         </label>
-        <label className="block text-sm">
-          {t("phone")} <span aria-hidden="true" className="text-maroon">*</span>
+        <label className="block text-xs font-semibold text-[#142621]">
+          {t("phone")} <span aria-hidden="true" className="text-rose-600">*</span>
           <input name="phone" type="tel" autoComplete="tel" inputMode="tel" required maxLength={20} aria-invalid={Boolean(errors.phone)} aria-describedby={errors.phone ? "phone-error" : undefined} className={fieldClass} />
-          {errors.phone ? <span id="phone-error" className="mt-1 block text-maroon">{errors.phone}</span> : null}
+          {errors.phone ? <span id="phone-error" className="mt-1 block text-xs text-rose-600 font-medium">{errors.phone}</span> : null}
         </label>
-        <label className="block text-sm">
-          {t("need")} <span aria-hidden="true" className="text-maroon">*</span>
+        <label className="block text-xs font-semibold text-[#142621]">
+          {t("need")} <span aria-hidden="true" className="text-rose-600">*</span>
           <select name="need" defaultValue="" required aria-invalid={Boolean(errors.need)} aria-describedby={errors.need ? "need-error" : undefined} className={fieldClass}>
             <option value="" disabled>
               {t("needPlaceholder")}
@@ -112,10 +123,10 @@ export function AppointmentForm() {
               </option>
             ))}
           </select>
-          {errors.need ? <span id="need-error" className="mt-1 block text-maroon">{errors.need}</span> : null}
+          {errors.need ? <span id="need-error" className="mt-1 block text-xs text-rose-600 font-medium">{errors.need}</span> : null}
         </label>
-        <label className="block text-sm">
-          {t("place")} <span aria-hidden="true" className="text-maroon">*</span>
+        <label className="block text-xs font-semibold text-[#142621]">
+          {t("place")} <span aria-hidden="true" className="text-rose-600">*</span>
           <select name="place" defaultValue="" required aria-invalid={Boolean(errors.place)} aria-describedby={errors.place ? "place-error" : undefined} className={fieldClass}>
             <option value="" disabled>
               {t("placePlaceholder")}
@@ -126,23 +137,23 @@ export function AppointmentForm() {
               </option>
             ))}
           </select>
-          {errors.place ? <span id="place-error" className="mt-1 block text-maroon">{errors.place}</span> : null}
+          {errors.place ? <span id="place-error" className="mt-1 block text-xs text-rose-600 font-medium">{errors.place}</span> : null}
         </label>
       </div>
-      <label className="mt-4 block text-sm">
-        {t("message")} <span className="text-ink-soft">({t("messageOptional")})</span>
+      <label className="mt-5 block text-xs font-semibold text-[#142621]">
+        {t("message")} <span className="text-[#6E8078] font-normal">({t("messageOptional")})</span>
         <textarea name="message" rows={4} maxLength={400} className={fieldClass} />
       </label>
       <button
         type="submit"
-        className="mt-5 rounded-full bg-maroon px-5 py-2.5 text-sm text-cream hover:bg-maroon-deep"
+        className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-[#153C33] px-7 py-3.5 text-xs sm:text-sm font-semibold text-white shadow-xs hover:bg-[#0E2923] hover:shadow-sm active:translate-y-px transition-all"
       >
         {t("submit")}
       </button>
-      <p className="mt-4 text-sm leading-6 text-ink-soft" role="status" aria-live="polite">
+      <p className="mt-4 text-xs sm:text-sm leading-relaxed text-[#445951]" role="status" aria-live="polite">
         {status}{chatUrl ? (
           <>{" "}
-          <a className="text-maroon underline-offset-2 hover:underline" href={chatUrl} target="_blank" rel="noreferrer">
+          <a className="font-semibold text-[#153C33] underline underline-offset-2 hover:text-[#0E2923]" href={chatUrl} target="_blank" rel="noreferrer">
             {t("openedLink")}
           </a>
           </>

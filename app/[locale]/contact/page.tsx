@@ -19,16 +19,31 @@ export default async function ContactPage({ params }: Props) {
   const home = await getTranslations("home");
 
   return (
-    <div className="mx-auto max-w-5xl px-5 py-14">
-      <p className="text-xs uppercase tracking-[0.16em] text-saffron-deep">{t("kicker")}</p>
-      <h1 className="mt-2 font-display text-5xl text-maroon-deep">{t("title")}</h1>
-      <p className="mt-4 max-w-2xl leading-7">{t("intro")}</p>
+    <div className="mx-auto max-w-5xl px-4 sm:px-6 py-12 sm:py-16">
+      <div className="section-label">
+        <span>{t("kicker")}</span>
+      </div>
+      <h1 className="mt-3 font-display text-4xl sm:text-5xl font-bold tracking-tight text-[#142621]">
+        {t("title")}
+      </h1>
+      <p className="mt-3 max-w-2xl text-base text-[#445951] leading-relaxed">
+        {t("intro")}
+      </p>
+      
       <div className="mt-8">
         <AppointmentForm />
       </div>
-      <h2 className="mt-12 text-2xl text-maroon-deep">{home("clinicsTitle")}</h2>
-      <div className="mt-4">
-        <Clinics />
+
+      <div className="mt-16">
+        <div className="section-label mb-2">
+          <span>{home("clinicsTitle")}</span>
+        </div>
+        <h2 className="font-display text-3xl font-bold tracking-tight text-[#142621]">
+          {home("clinicsTitle")}
+        </h2>
+        <div className="mt-6">
+          <Clinics />
+        </div>
       </div>
     </div>
   );

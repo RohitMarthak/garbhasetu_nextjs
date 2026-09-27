@@ -5,6 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { routing } from "@/i18n/routing";
 import { createLocalizedMetadata, type Locale } from "@/lib/metadata";
 import "../globals.css";
@@ -60,16 +61,20 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} className={`${noto.variable} ${display.variable}`}>
-      <body className="frame min-h-screen antialiased">
+      <body className="frame min-h-screen antialiased font-sans text-ink">
         <NextIntlClientProvider messages={messages}>
           <a href="#main-content" className="skip-link">
             {messages.nav.skipToContent as string}
           </a>
           <Header />
-          <main id="main-content" tabIndex={-1}>{children}</main>
+          <main id="main-content" tabIndex={-1} className="pt-16 sm:pt-20">
+            {children}
+          </main>
           <Footer />
+          <FloatingWhatsApp />
         </NextIntlClientProvider>
       </body>
     </html>
   );
 }
+

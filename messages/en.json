@@ -12,146 +12,205 @@
   },
   "nav": {
     "home": "Home",
-    "services": "Services",
+    "concept": "Concept",
+    "whyNow": "Why Now",
+    "services": "Services & Activities",
     "packages": "Packages",
-    "contact": "Contact",
+    "locations": "Clinics",
+    "contact": "Book Consult",
     "whatsapp": "WhatsApp",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "language": "English",
-    "appointment": "Request appointment",
+    "appointment": "Request consultation",
     "homeLabel": "GarbhaSetu home",
     "primaryNav": "Primary navigation",
     "mobileNav": "Mobile navigation",
     "footerNav": "Footer navigation",
     "switchToEnglish": "Switch to English",
     "switchToGujarati": "Switch to Gujarati",
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "floatingWhatsApp": "Chat on WhatsApp",
+    "drJagrutWhatsApp": "Dr. Jagrut (Ayurveda)",
+    "drRichaWhatsApp": "Dr. Richa (Physio)"
   },
   "home": {
     "shloka": "॥ सर्वे भवन्तु सुखिनः ॥",
     "tagline": "Science meets Sanskar: a bridge to a brighter future",
-    "founderKicker": "Founders of GarbhaSetu",
-    "founderRole": "Professional pregnancy wellness practitioners",
-    "ctaServices": "Services",
-    "ctaContact": "Request an appointment",
-    "definitionKicker": "Concept of Garbhasanskar",
-    "definitionTitle": "Garbha + sanskar = garbha sanskar",
-    "definitionBody": "The sanskar done upon the garbha is called garbha sanskar.",
-    "quote": "संस्कारो हि नाम गुणान्तराधानम्",
-    "quoteMeaning": "Sanskar means the sacred act of transforming something, or a being, of lesser quality into superior qualities.",
-    "examplesTitle": "Examples of sanskar",
-    "examples": [
-      "Making curd from milk",
-      "Making cooked rice from rice",
-      "Making kadhi from buttermilk"
+    "heroSubtitle": "Ayurvedic garbhasanskar guidance and clinical pregnancy physiotherapy for mother and baby in Palanpur.",
+    "founderKicker": "Specialist Care",
+    "founderRole": "Dr. Jagrut Chauhan (BAMS) & Dr. Richa Madhu (PT)",
+    "ctaExplore": "Explore Care Plans",
+    "ctaContact": "Request Consultation",
+    "problemKicker": "The Modern Challenge",
+    "problemTitle": "Pregnancy without the confusion and isolation",
+    "problemLead": "Expectant parents today face conflicting online advice, routine clinic visits that overlook daily mindset, and physical aches left unaddressed.",
+    "problemQuote": "“Pregnancy is not a medical condition to manage with occasional visits — it is a whole-life journey that thrives on daily care.”",
+    "problemPoints": [
+      {
+        "id": "noise",
+        "title": "Information overload & anxiety",
+        "desc": "Endless generic online tips cause stress instead of calm, joyful confidence."
+      },
+      {
+        "id": "disconnect",
+        "title": "Overlooked emotional & mental care",
+        "desc": "Routine checkups track growth markers but rarely guide daily mindset, reading, and meditation."
+      },
+      {
+        "id": "physical",
+        "title": "Accepting pain as normal",
+        "desc": "Pelvic tightness, back pain, and postpartum weakness can be actively relieved and prevented."
+      },
+      {
+        "id": "partner",
+        "title": "Fathers left wondering how to help",
+        "desc": "Partners and family members are often unsure how to support daily pregnancy wellness."
+      }
     ],
-    "philosophyTitle": "Foundational idea",
-    "philosophyBody": "Traditional Garbha Sanskar uses the image of preparing seed, soil, nourishment, and care to explain thoughtful preparation for pregnancy. At GarbhaSetu, this means supporting the parents’ health, nourishing food, healthy routines, and a caring environment.",
-    "wholeTitle": "A complete process",
-    "wholeBody": "Garbha sanskar is not the name of one mantra, one puja, or one special rite. It is a complete process that considers the physical, mental, emotional, and spiritual health of the parents and the unborn child. It includes suitable diet, exercise, enough sleep, stress management, positive thoughts, music, reading, and mutual love and bonding.",
-    "scienceBody": "GarbhaSetu combines traditional Garbha Sanskar practices with practical pregnancy wellness support. The focus is the parents’ wellbeing, informed choices, positive routines, and emotional connection. These practices do not predict a child’s traits or guarantee a pregnancy or birth outcome.",
-    "aspectsTitle": "Diet, mind, and bond",
+    "definitionKicker": "Core Philosophy",
+    "definitionTitle": "Garbha + Sanskar = Garbha Sanskar",
+    "definitionBody": "Garbha Sanskar means nurturing and guiding the unborn child and parents through positive thoughts, sound, and care.",
+    "quote": "संस्कारो हि नाम गुणान्तराधानम्",
+    "quoteMeaning": "Sanskar means the conscious process of nurturing and awakening superior qualities.",
+    "metaphorKicker": "The Seed, Soil & Season",
+    "metaphorTitle": "Just like preparing for a healthy harvest",
+    "metaphorBody": "Four essentials create a healthy harvest: pure seed (Beej), fertile soil (Kshetra), nourishing water (Ambu), and the right season (Ritu). In the same way, a healthy baby begins with healthy parents, wholesome food, and a caring daily environment.",
+    "examplesTitle": "Everyday examples of transformation",
+    "examples": [
+      "Milk into nourishing curd",
+      "Grain into wholesome food",
+      "Buttermilk into rich kadhi"
+    ],
+    "philosophyTitle": "Daily Care, Not Superstition",
+    "philosophyBody": "Garbha Sanskar is not a single ritual or talisman. It is a healthy daily routine supporting the mother's physical comfort, emotional calm, and nutritional needs.",
+    "wholeTitle": "A Balanced Approach",
+    "wholeBody": "We combine classical Ayurvedic wisdom with evidence-based physiotherapy to support parents with informed choices, gentle movement, and emotional connection.",
+    "scienceBody": "GarbhaSetu combines traditional Garbha Sanskar with modern pregnancy wellness. We focus on parent health, calm routines, and safe physical conditioning.",
+    "whyNowKicker": "The 9-Month Window",
+    "whyNowTitle": "Why early prenatal nurturing matters",
+    "whyNowLead": "The 280 days in the womb shape your baby's earliest foundation. What you eat, hear, feel, and practice creates a calm start to life.",
+    "whyNowPillars": [
+      {
+        "id": "brain",
+        "title": "Your baby's brain is forming right now",
+        "desc": "Hearing and brain pathways develop in the womb. Gentle music (Garbha Sangeet), humming, and reading stimulate early growth."
+      },
+      {
+        "id": "epigenetics",
+        "title": "What you feel, your baby feels",
+        "desc": "Maternal stress hormones reach the baby through the placenta. Daily pranayama (breathwork) and meditation support emotional calm."
+      },
+      {
+        "id": "labor",
+        "title": "Pelvic strength for smoother labour",
+        "desc": "Pregnancy-safe mobility and pelvic floor exercises ease birth preparation and reduce postpartum weakness."
+      },
+      {
+        "id": "bonding",
+        "title": "Talk, sing, and bond before birth",
+        "desc": "Conscious conversations (Garbha Samvad) and partner touch build a deep, lasting bond with your baby before birth."
+      }
+    ],
+    "aspectsTitle": "Diet, Mind, and Bond",
     "aspects": [
       {
         "id": "nourishment",
-        "title": "Diet and exercise",
-        "body": "Suitable sattvic diet, nourishing food, and safe exercise during pregnancy."
+        "title": "Diet & safe movement",
+        "body": "Nourishing sattvic meals (Ahara) and gentle pregnancy-safe exercise."
       },
       {
         "id": "mind",
-        "title": "A positive mind",
-        "body": "A life with less stress, good reading, garbha sangeet, and positive thoughts."
+        "title": "A calm, positive mindset",
+        "body": "Lower stress through mindful reading (Swadhyay), music, and quiet reflection."
       },
       {
         "id": "bond",
-        "title": "Emotional bond",
-        "body": "Supportive communication helps parents and family build emotional connection during pregnancy."
+        "title": "Parent-child connection",
+        "body": "Loving communication (Garbha Samvad) between both parents and baby."
       }
     ],
-    "equationKicker": "A healthy beginning",
+    "equationKicker": "The Care Formula",
     "equationParts": [
       "Healthy mother",
-      "Healthy environment",
+      "Caring environment",
       "Informed parents"
     ],
-    "equationResult": "A healthy beginning for the baby",
-    "foundersTitle": "Founders",
+    "equationResult": "A healthy start for your baby",
+    "foundersTitle": "Founders & Practitioners",
     "jagrutName": "Dr. Jagrut Chauhan (BAMS)",
     "jagrutPlace": "Agnivesh Ayurvedic Clinic, Palanpur",
     "richaName": "Dr. Richa Madhu (PT)",
-    "richaPlace": "Physio Harmony",
-    "clinicsTitle": "Clinic locations",
+    "richaPlace": "Physio Harmony, Palanpur",
+    "clinicsTitle": "Palanpur Clinic Locations",
     "agniveshName": "Agnivesh Ayurveda and Panchkarma Clinic",
     "agniveshAddress": "F6, 1st floor, Time Square Complex, Deesa–Palanpur Highway, near One Center Mall, Sardar Patel Nagar, Palanpur, Gujarat 385001",
     "sanidhiName": "Sanidhi Physiotherapy and Fitness Centre",
     "sanidhiAddress": "First floor, SF Sai Complex, Gobri Road, Palanpur, Gujarat 385001",
     "map": "Open in Google Maps",
-    "call": "Call",
-    "photoDiet": "Diet and daily routine",
-    "photoMeditation": "Meditation, yoga, and prayer",
-    "photoLotus": "Garbha sangeet",
+    "call": "Call Clinic",
+    "photoDiet": "Diet & Daily Routine",
+    "photoMeditation": "Meditation & Swadhyay",
+    "photoLotus": "Garbha Sangeet & Sound",
     "brandDescriptor": "Pregnancy wellness in Palanpur",
-    "mapPreview": "Map preview loads here. Use the Google Maps link below if it is unavailable.",
+    "mapPreview": "Interactive map loaded. Use the Google Maps link below if it is unavailable.",
     "mapFrameTitle": "Map for {clinic}"
   },
   "services": {
     "kicker": "Care at GarbhaSetu",
-    "title": "Ayurveda and physiotherapy",
-    "intro": "Garbha sanskar guidance with Dr. Jagrut Chauhan, and pregnancy physiotherapy with Dr. Richa Madhu.",
-    "ayurvedaKicker": "Ayurvedic traditional values",
+    "title": "Ayurveda and clinical physiotherapy",
+    "intro": "Ayurvedic garbhasanskar guidance with Dr. Jagrut Chauhan, and pregnancy physiotherapy with Dr. Richa Madhu.",
+    "ayurvedaKicker": "Ayurvedic Guidance",
     "ayurvedaTitle": "Guided by Dr. Jagrut Chauhan (BAMS)",
-    "ayurvedaIntro": "Counselling, diet and daily routine, and psychological and spiritual guidance.",
-    "counselTitle": "Counselling",
-    "counselBody": "Personal sessions for the parents’ questions, preparation of mindset, and emotional wellbeing through pregnancy.",
-    "dietTitle": "Diet and daily routine",
-    "dietBody": "Ahara and vihara according to Ayurveda, including ritucharya and the garbhini routine, set out by trimester from classical Ayurvedic texts.",
-    "mindTitle": "Psychological guidance",
+    "ayurvedaIntro": "Personalized nutrition, daily routines, swadhyay reading, and calming Garbha Sangeet.",
+    "counselTitle": "Parent Counselling",
+    "counselBody": "One-on-one sessions for mindset preparation, emotional wellness, and answering your questions throughout pregnancy.",
+    "dietTitle": "Ahara (Diet) & Vihara (Daily Routine)",
+    "dietBody": "Nourishing meals matched to each trimester (Ritucharya), supporting digestion, stamina, and baby development.",
+    "mindTitle": "Swadhyay & Meditation",
     "mindItems": [
-      "Month-by-month reading selected for reflection, values, and emotional wellbeing",
-      "Swadhyay and prayer, including local prayers",
-      "Meditation, Om and mantra chanting, and the mother’s humming and singing",
-      "Yoga and pranayama suitable for pregnancy, and stress management",
-      "Garbha sangeet and music for wellness and relaxation, for example Jijabai na halarda and Krishna-theme music",
-      "Motivational and spiritual writing, listening, and reading",
-      "Positive reflection about pregnancy and parenthood"
+      "Month-by-month book reading (Swadhyay) selected for values and positive reflection",
+      "Daily prayer and tranquil meditation",
+      "Om chanting, mantra resonance, and maternal humming",
+      "Pregnancy-safe yoga, pranayama, and stress-relief techniques",
+      "Garbha Sangeet — soothing music including Jijabai na halarda and relaxing acoustic melodies",
+      "Motivational writing and positive manifestation for your baby"
     ],
-    "samvadTitle": "Garbha samvad",
-    "samvadBody": "During pregnancy, the parents connect with the unborn child through love, feeling, and positive emotion. They talk with the child, speak loving words, express their feelings, and share positive experiences together.",
-    "activitiesTitle": "Personal daily activities on WhatsApp",
-    "activitiesIntro": "A personal daily activity is sent on WhatsApp and checked each day.",
+    "samvadTitle": "Garbha Samvad (Parent-Baby Bonding)",
+    "samvadBody": "Conscious conversations between parents and baby in the womb. Speaking loving words, gentle belly touch, and sharing positive experiences together.",
+    "activitiesTitle": "Daily WhatsApp Guidance & Tasks",
+    "activitiesIntro": "A creative daily activity sent to your WhatsApp and checked every day.",
     "activities": [
-      "Drawing and painting, including mandala art, as an optional creative activity for the mother",
-      "Clay activity",
-      "Maths activity",
-      "Games and puzzles",
-      "Positive visualization and manifestation"
+      "Mandala art and drawing to build focus and calm",
+      "Clay modeling activities",
+      "Fun math and logic puzzles",
+      "Positive visualization and guided imagery"
     ],
-    "journalTitle": "Daily wellness journal",
-    "journalBody": "A journal is given for daily food, hours of sleep, medicine, water intake, an exercise chart, a checkbox for the daily task, the follow-up date, and session notes. It also includes education about body weight, with a positive approach.",
-    "physioKicker": "Physiotherapy approach",
-    "physioTitle": "Clinical care by Dr. Richa Madhu (PT)",
-    "physioIntro": "Antenatal care, preparation for labour, lactation support, and postpartum assessment and management.",
+    "journalTitle": "Daily Wellness Journal",
+    "journalBody": "You receive a structured daily journal to track food, sleep, hydration, medicines, and exercise. Includes follow-up check-boxes and positive weight education.",
+    "physioKicker": "Physiotherapy Care",
+    "physioTitle": "Clinical Care by Dr. Richa Madhu (PT)",
+    "physioIntro": "Antenatal wellness, labour preparation, lactation support, and postnatal rehabilitation.",
     "pillars": [
       {
         "id": "antenatal",
         "title": "Antenatal care",
-        "body": "Wellness and exercise during pregnancy."
+        "body": "Safe exercise, pelvic mobility, and relief from back and rib discomfort."
       },
       {
         "id": "labour",
         "title": "Preparation for labour",
-        "body": "Positioning and pelvic-floor preparation."
+        "body": "Physio-ball positions, breathing control, and pelvic floor relaxation."
       },
       {
         "id": "lactation",
         "title": "Lactation support",
-        "body": "Latching, and care for neck and thoracic discomfort."
+        "body": "Comfortable latching techniques, posture correction, and breast care."
       },
       {
         "id": "postpartum",
-        "title": "Postpartum care",
-        "body": "Assessment, and recovery of the core and pelvic floor."
+        "title": "Postpartum recovery",
+        "body": "Assessment, core retraining, diastasis recti care, and pelvic floor rehab."
       }
     ],
     "ancTitle": "Antenatal care",
@@ -325,8 +384,7 @@
     "consultLabel": "Consultation",
     "perSessionLabel": "Per session",
     "ayurvedaTitle": "Ayurvedic care",
-    "ayurvedaBody": "Ayurvedic consultation, treatment, and medicines are charged separately.",
-    "pricingNotice": "Fees shown here come from the supplied clinic documents. Confirm the final amount and package details with the clinic before booking."
+    "ayurvedaBody": "Ayurvedic consultation, treatment, and medicines are charged separately."
   },
   "contact": {
     "kicker": "Palanpur",
@@ -380,7 +438,6 @@
   },
   "footer": {
     "rights": "GarbhaSetu, Palanpur",
-    "photos": "Brand and photograph sources are recorded in the project asset register.",
     "notice": "Information on this website is educational. Care and exercise plans require an individual assessment. WhatsApp is not an emergency service."
   },
   "notFound": {
